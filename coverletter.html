@@ -1,376 +1,449 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="robots" content="noindex,nofollow" />
-    <title>Cover Letter</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link
-      href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&amp;family=Inter:wght@300;400;500;600;700&amp;display=swap"
-      rel="stylesheet"
-    />
-    <script src="https://code.iconify.design/3/3.1.0/iconify.min.js"></script>
-    <link rel="icon" type="image/png" href="media/favicon.png" />
-    <meta property="og:title" content="Cover Letter - Cory MacVie" />
-    <meta
-      property="og:description"
-      content="Product Manager Application - Cory MacVie"
-    />
-    <meta property="og:image" content="media/profile_sm.png" />
-    <meta property="og:type" content="website" />
+<html><head><meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex,nofollow">
+  <title>Cover Letter</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet">
+  <script src="https://code.iconify.design/3/3.1.0/iconify.min.js"></script>
+  <link rel="icon" type="image/png" href="media/favicon.png">
+  <meta property="og:title" content="Cover Letter - Cory MacVie">
+  <meta property="og:description" content="Product Manager Application - Cory MacVie">
+  <meta property="og:image" content="media/profile_sm.png">
+  <meta property="og:type" content="website">
+  <style>
+    .button {
+      cursor: pointer;
+      position: relative;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+      transition: all 0.25s ease;
+      background: radial-gradient(65.28% 65.28% at 50% 100%,
+          rgba(34, 211, 238, 0.8) 0%,
+          rgba(34, 211, 238, 0) 100%),
+        linear-gradient(0deg, #2563eb, #2563eb);
+      border-radius: 0.75rem;
+      border: none;
+      outline: none;
+      padding: 10px 16px;
+      min-height: 40px;
+      text-decoration: none;
+      box-shadow: 0 0 20px 8px rgba(255, 255, 255, 0.7), 0 0 40px 16px rgba(255, 255, 255, 0.4);
+    }
+  
+    .button::before,
+    .button::after {
+      content: "";
+      position: absolute;
+      transition: all 0.5s ease-in-out;
+      z-index: 0;
+    }
+  
+    .button::before {
+      inset: 1px;
+      background: linear-gradient(177.95deg,
+          rgba(255, 255, 255, 0.19) 0%,
+          rgba(255, 255, 255, 0) 100%);
+      border-radius: calc(0.75rem - 1px);
+    }
+  
+    .button::after {
+      inset: 2px;
+      background: radial-gradient(65.28% 65.28% at 50% 100%,
+          rgba(34, 211, 238, 0.8) 0%,
+          rgba(34, 211, 238, 0) 100%),
+        linear-gradient(0deg, #2563eb, #2563eb);
+      border-radius: calc(0.75rem - 2px);
+    }
+  
+    .button:active {
+      transform: scale(0.95);
+    }
+  
+    .points_wrapper {
+      overflow: hidden;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+      position: absolute;
+      z-index: 1;
+    }
+  
+    .points_wrapper .point {
+      bottom: -10px;
+      position: absolute;
+      animation: floating-points infinite ease-in-out;
+      pointer-events: none;
+      width: 2px;
+      height: 2px;
+      background-color: #fff;
+      border-radius: 9999px;
+    }
+  
+    @keyframes floating-points {
+      0% {
+        transform: translateY(0);
+      }
+  
+      85% {
+        opacity: 0;
+      }
+  
+      100% {
+        transform: translateY(-55px);
+        opacity: 0;
+      }
+    }
+  
+    .points_wrapper .point:nth-child(1) {
+      left: 10%;
+      opacity: 1;
+      animation-duration: 2.35s;
+      animation-delay: 0.2s;
+    }
+  
+    .points_wrapper .point:nth-child(2) {
+      left: 30%;
+      opacity: 0.7;
+      animation-duration: 2.5s;
+      animation-delay: 0.5s;
+    }
+  
+    .points_wrapper .point:nth-child(3) {
+      left: 25%;
+      opacity: 0.8;
+      animation-duration: 2.2s;
+      animation-delay: 0.1s;
+    }
+  
+    .points_wrapper .point:nth-child(4) {
+      left: 44%;
+      opacity: 0.6;
+      animation-duration: 2.05s;
+    }
+  
+    .points_wrapper .point:nth-child(5) {
+      left: 50%;
+      opacity: 1;
+      animation-duration: 1.9s;
+    }
+  
+    .points_wrapper .point:nth-child(6) {
+      left: 75%;
+      opacity: 0.5;
+      animation-duration: 1.5s;
+      animation-delay: 1.5s;
+    }
+  
+    .points_wrapper .point:nth-child(7) {
+      left: 88%;
+      opacity: 0.9;
+      animation-duration: 2.2s;
+      animation-delay: 0.2s;
+    }
+  
+    .points_wrapper .point:nth-child(8) {
+      left: 58%;
+      opacity: 0.8;
+      animation-duration: 2.25s;
+      animation-delay: 0.2s;
+    }
+  
+    .points_wrapper .point:nth-child(9) {
+      left: 98%;
+      opacity: 0.6;
+      animation-duration: 2.6s;
+      animation-delay: 0.1s;
+    }
+  
+    .points_wrapper .point:nth-child(10) {
+      left: 65%;
+      opacity: 1;
+      animation-duration: 2.5s;
+      animation-delay: 0.2s;
+    }
+  
+    .inner {
+      z-index: 2;
+      gap: 6px;
+      position: relative;
+      width: 100%;
+      color: white;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 1.5;
+      transition: color 0.2s ease-in-out;
+    }
+  
+    .inner svg.icon {
+      width: 16px;
+      height: 16px;
+      transition: transform 0.3s ease;
+      stroke: white;
+      fill: none;
+    }
+  
+    .button:hover svg.icon {
+      transform: translateX(2px);
+    }
+  
+    .button:hover svg.icon path {
+      animation: dash 0.8s linear forwards;
+    }
+  
+    @keyframes dash {
+      0% {
+        stroke-dasharray: 0, 20;
+        stroke-dashoffset: 0;
+      }
+  
+      50% {
+        stroke-dasharray: 10, 10;
+        stroke-dashoffset: -5;
+      }
+  
+      100% {
+        stroke-dasharray: 20, 0;
+        stroke-dashoffset: -10;
+      }
+    }
+  </style>
   </head>
-  <body
-    class="bg-gradient-to-br from-slate-100 to-slate-200 min-h-screen font-['Inter'] overflow-x-hidden"
-  >
-    <!-- Home Button -->
-    <div class="fixed top-6 right-6 z-50">
-      <a
-        href="index.html"
-        class="flex items-center gap-2 bg-white/90 backdrop-blur-sm px-4 py-2 rounded-lg shadow-md hover:shadow-lg transition-all duration-200 text-sm font-medium text-slate-700 hover:text-slate-900"
-      >
-        <span
-          class="iconify"
-          data-icon="lucide:home"
-          data-width="16"
-          style="stroke-width: 1.5"
-        ></span>
-        Home
-      </a>
-    </div>
-
-    <!-- Background Photos -->
-    <div
-      class="fixed inset-0 z-0 flex flex-col justify-center gap-4 opacity-90"
-    >
-      <!-- Row 1 - moves right -->
-      <div
-        class="photo-row flex gap-4"
-        data-direction="right"
-        style="transform: translateX(-200px);"
-      >
-        <div class="w-96 h-56 rounded-xl overflow-hidden flex-shrink-0">
-          <img
-            src="media/IMG_8590.JPG"
-            alt="Background"
-            class="w-full h-full object-cover"
-          />
-        </div>
-        <div class="w-96 h-56 rounded-xl overflow-hidden flex-shrink-0">
-          <img
-            src="media/img_3845.jpeg"
-            alt="Background"
-            class="w-full h-full object-cover"
-          />
-        </div>
-        <div class="w-96 h-56 rounded-xl overflow-hidden flex-shrink-0">
-          <img
-            src="media/IMG_6604.jpg"
-            alt="Background"
-            class="w-full h-full object-cover"
-          />
-        </div>
-        <div class="w-96 h-56 rounded-xl overflow-hidden flex-shrink-0">
-          <img
-            src="media/IMG_7092.jpg"
-            alt="Background"
-            class="w-full h-full object-cover"
-          />
-        </div>
-        <div class="w-96 h-56 rounded-xl overflow-hidden flex-shrink-0">
-          <img
-            src="media/IMG_6643.jpg"
-            alt="Background"
-            class="w-full h-full object-cover"
-          />
-        </div>
-        <div class="w-96 h-56 rounded-xl overflow-hidden flex-shrink-0">
-          <img
-            src="media/IMG_6605.jpg"
-            alt="Background"
-            class="w-full h-full object-cover"
-          />
-        </div>
-      </div>
-
-      <!-- Row 2 - moves left -->
-      <div
-        class="photo-row flex gap-4"
-        data-direction="left"
-        style="transform: translateX(0px);"
-      >
-        <div class="w-96 h-56 rounded-xl overflow-hidden flex-shrink-0">
-          <img
-            src="media/IMG_4891.JPG"
-            alt="Background"
-            class="w-full h-full object-cover"
-          />
-        </div>
-        <div class="w-96 h-56 rounded-xl overflow-hidden flex-shrink-0">
-          <img
-            src="media/IMG_4315.jpg"
-            alt="Background"
-            class="w-full h-full object-cover"
-          />
-        </div>
-        <div class="w-96 h-56 rounded-xl overflow-hidden flex-shrink-0">
-          <img
-            src="media/IMG_5380.JPG"
-            alt="Background"
-            class="w-full h-full object-cover"
-          />
-        </div>
-        <div class="w-96 h-56 rounded-xl overflow-hidden flex-shrink-0">
-          <img
-            src="media/IMG_4710.jpg"
-            alt="Background"
-            class="w-full h-full object-cover"
-          />
-        </div>
-        <div class="w-96 h-56 rounded-xl overflow-hidden flex-shrink-0">
-          <img
-            src="media/IMG_4693.jpg"
-            alt="Background"
-            class="w-full h-full object-cover"
-          />
-        </div>
-        <div class="w-96 h-56 rounded-xl overflow-hidden flex-shrink-0">
-          <img
-            src="media.IMG_5285.jpg"
-            alt="Background"
-            class="w-full h-full object-cover"
-          />
-        </div>
-      </div>
-
-      <!-- Row 3 - moves right -->
-      <div
-        class="photo-row flex gap-4"
-        data-direction="right"
-        style="transform: translateX(-400px);"
-      >
-        <div class="w-96 h-56 rounded-xl overflow-hidden flex-shrink-0">
-          <img
-            src="media/IMG_2259.JPG"
-            alt="Background"
-            class="w-full h-full object-cover"
-          />
-        </div>
-        <div class="w-96 h-56 rounded-xl overflow-hidden flex-shrink-0">
-          <img
-            src="media/DSC02616.JPG"
-            alt="Background"
-            class="w-full h-full object-cover"
-          />
-        </div>
-        <div class="w-96 h-56 rounded-xl overflow-hidden flex-shrink-0">
-          <img
-            src="media/IMG_0464.JPG"
-            alt="Background"
-            class="w-full h-full object-cover"
-          />
-        </div>
-        <div class="w-96 h-56 rounded-xl overflow-hidden flex-shrink-0">
-          <img
-            src="media/img_4725.jpeg"
-            alt="Background"
-            class="w-full h-full object-cover"
-          />
-        </div>
-        <div class="w-96 h-56 rounded-xl overflow-hidden flex-shrink-0">
-          <img
-            src="media/DSC03455.JPG"
-            alt="Background"
-            class="w-full h-full object-cover"
-          />
-        </div>
-        <div class="w-96 h-56 rounded-xl overflow-hidden flex-shrink-0">
-          <img
-            src="media/IMG_2237.JPG"
-            alt="Background"
-            class="w-full h-full object-cover"
-          />
-        </div>
-      </div>
-
-      <!-- Row 4 - moves left -->
-      <div
-        class="photo-row flex gap-4"
-        data-direction="left"
-        style="transform: translateX(-100px);"
-      >
-        <div class="w-96 h-56 rounded-xl overflow-hidden flex-shrink-0">
-          <img
-            src="media/DSC00007.jpg"
-            alt="Background"
-            class="w-full h-full object-cover"
-          />
-        </div>
-        <div class="w-96 h-56 rounded-xl overflow-hidden flex-shrink-0">
-          <img
-            src="media/img_8572.jpg"
-            alt="Background"
-            class="w-full h-full object-cover"
-          />
-        </div>
-        <div class="w-96 h-56 rounded-xl overflow-hidden flex-shrink-0">
-          <img
-            src="media/img_9327.jpg"
-            alt="Background"
-            class="w-full h-full object-cover"
-          />
-        </div>
-        <div class="w-96 h-56 rounded-xl overflow-hidden flex-shrink-0">
-          <img
-            src="media/DSC00011.jpg"
-            alt="Background"
-            class="w-full h-full object-cover"
-          />
-        </div>
-        <div class="w-96 h-56 rounded-xl overflow-hidden flex-shrink-0">
-          <img
-            src="media/IMG_5285.jpg"
-            alt="Background"
-            class="w-full h-full object-cover"
-          />
-        </div>
-        <div class="w-96 h-56 rounded-xl overflow-hidden flex-shrink-0">
-          <img
-            src="media/img_3845.jpeg"
-            alt="Background"
-            class="w-full h-full object-cover"
-          />
-        </div>
-      </div>
-    </div>
-
-    <!-- Cover Letter -->
-    <div
-      class="relative z-10 flex justify-center items-center min-h-screen py-16 px-4"
-    >
-      <div
-        class="bg-white rounded-xl shadow-2xl shadow-slate-400/40 w-full min-h-screen p-12 md:p-16 relative"
-        style="max-width: 768px;"
-      >
-        <!-- Portrait Image -->
-        <div class="absolute top-12 right-12 md:top-16 md:right-16">
-          <img
-            src="media/profile_sm.png"
-            alt="Cory MacVie"
-            class="w-24 h-36 rounded-lg object-cover border-2 border-white"
-          />
-        </div>
-
-        <div class="mb-8">
-          <h1
-            class="text-3xl font-semibold text-slate-900 tracking-tight font-['Caveat']"
-          >
-            Cory MacVie
-          </h1>
-          <p class="text-lg text-slate-500 mt-1 font-['Caveat']">
-            Product Manager Applicant
-          </p>
-        </div>
-
-        <div class="text-slate-500 mb-8 text-lg">
-          <p class="text-lg font-['Caveat']">December 27, 2025</p>
-        </div>
-
-        <div
-          class="space-y-4 text-slate-700 leading-relaxed font-['Caveat'] text-2xl"
-        >
-          <p>Dear Hiring Manager,</p>
-          <p>
-            I'm excited to apply for the Product Manager role at Automattic.
-            I've used WordPress for many years and have always admired
-            Automattic's commitment to open, people-first publishing. Few
-            companies have shaped the modern web as meaningfully, and I'd love
-            to contribute to that mission.
-          </p>
-          <p>
-            I'm drawn to Automattic because I care deeply about building
-            products that genuinely improve people's lives. Day One is, in my
-            view, the best personal journaling app available. I regularly
-            recommend it because of the care it shows users, especially the
-            ability to preserve entries as printed books rather than letting
-            them disappear into digital clutter. That attention to user value is
-            exactly the kind of work I want to be part of.
-          </p>
-          <p>
-            Throughout my career, I've led products across SaaS, marketplaces,
-            and platform ecosystems, working closely with engineering and design
-            to turn strategy into shipped outcomes. I'm comfortable operating
-            autonomously, navigating ambiguity, and balancing user needs,
-            business goals, and technical constraints. I value clarity in
-            vision, communication, and execution, particularly in distributed
-            teams.
-          </p>
-          <p>
-            I also strongly align with Automattic's creed. Its principles of
-            ownership, transparency, respect for time, and bias toward action
-            reflect how I already work and lead. I believe great products come
-            from trusted teams that iterate quickly and stay focused on user
-            impact.
-          </p>
-          <p>
-            I'd welcome the opportunity to discuss how my experience and values
-            can help Automattic continue building products that empower creators
-            worldwide.
-          </p>
-          <p>Thank you for your time and consideration.</p>
-          <p class="pt-4">Warm regards,</p>
-
-          <!-- Signature -->
-          <div class="pt-2">
-            <img src="media/signature2.png" />
+    <body class="bg-gradient-to-br from-slate-100 to-slate-200 min-h-screen font-['Inter'] overflow-x-hidden">
+      <!-- Resume Button -->
+      <div class="fixed top-6 right-6 z-50">
+        <a href="index.html" class="button">
+          <div class="points_wrapper">
+            <i class="point"></i>
+            <i class="point"></i>
+            <i class="point"></i>
+            <i class="point"></i>
+            <i class="point"></i>
+            <i class="point"></i>
+            <i class="point"></i>
+            <i class="point"></i>
+            <i class="point"></i>
+            <i class="point"></i>
           </div>
-
-          <!-- <p class="font-medium text-slate-900">Cory MacVie</p> -->
+          <span class="inner">
+            <svg
+              class="icon"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="1.5"
+            >
+              <path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"></path>
+              <polyline points="14 2 14 8 20 8"></polyline>
+              <line x1="16" y1="13" x2="8" y2="13"></line>
+              <line x1="16" y1="17" x2="8" y2="17"></line>
+              <line x1="10" y1="9" x2="8" y2="9"></line>
+            </svg>
+            Resume
+          </span>
+        </a>
+      </div>
+  
+      <!-- Background Photos -->
+      <div class="fixed inset-0 z-0 flex flex-col justify-center gap-4 opacity-90">
+        <!-- Row 1 - moves right -->
+        <div class="photo-row flex gap-4" data-direction="right" style="transform: translateX(-200px);">
+          <div class="w-96 h-56 rounded-xl overflow-hidden flex-shrink-0">
+            <img src="media/IMG_8590.JPG" alt="Background" class="w-full h-full object-cover">
+          </div>
+          <div class="w-96 h-56 rounded-xl overflow-hidden flex-shrink-0">
+            <img src="media/img_3845.jpeg" alt="Background" class="w-full h-full object-cover">
+          </div>
+          <div class="w-96 h-56 rounded-xl overflow-hidden flex-shrink-0">
+            <img src="media/IMG_6604.jpg" alt="Background" class="w-full h-full object-cover">
+          </div>
+          <div class="w-96 h-56 rounded-xl overflow-hidden flex-shrink-0">
+            <img src="media/IMG_7092.jpg" alt="Background" class="w-full h-full object-cover">
+          </div>
+          <div class="w-96 h-56 rounded-xl overflow-hidden flex-shrink-0">
+            <img src="media/IMG_6643.jpg" alt="Background" class="w-full h-full object-cover">
+          </div>
+          <div class="w-96 h-56 rounded-xl overflow-hidden flex-shrink-0">
+            <img src="media/IMG_6605.jpg" alt="Background" class="w-full h-full object-cover">
+          </div>
         </div>
-
-        <div
-          class="mt-10 pt-8 border-t border-slate-100 flex flex-wrap gap-4 text-slate-500 text-xl font-['Caveat']"
-        >
-          <span class="flex items-center gap-2">
-            <span
-              class="iconify"
-              data-icon="lucide:mail"
-              data-width="16"
-              style="stroke-width: 1.5"
-            ></span>
-            cory@corymacvie.com
-          </span>
-          <span class="flex items-center gap-2">
-            <span
-              class="iconify"
-              data-icon="lucide:phone"
-              data-width="16"
-              style="stroke-width: 1.5"
-            ></span>
-            (909) 435-6551
-          </span>
+  
+        <!-- Row 2 - moves left -->
+        <div class="photo-row flex gap-4" data-direction="left" style="transform: translateX(0px);">
+          <div class="w-96 h-56 rounded-xl overflow-hidden flex-shrink-0">
+            <img src="media/IMG_4891.JPG" alt="Background" class="w-full h-full object-cover">
+          </div>
+          <div class="w-96 h-56 rounded-xl overflow-hidden flex-shrink-0">
+            <img src="media/IMG_4315.jpg" alt="Background" class="w-full h-full object-cover">
+          </div>
+          <div class="w-96 h-56 rounded-xl overflow-hidden flex-shrink-0">
+            <img src="media/IMG_5380.JPG" alt="Background" class="w-full h-full object-cover">
+          </div>
+          <div class="w-96 h-56 rounded-xl overflow-hidden flex-shrink-0">
+            <img src="media/IMG_4710.jpg" alt="Background" class="w-full h-full object-cover">
+          </div>
+          <div class="w-96 h-56 rounded-xl overflow-hidden flex-shrink-0">
+            <img src="media/IMG_4693.jpg" alt="Background" class="w-full h-full object-cover">
+          </div>
+          <div class="w-96 h-56 rounded-xl overflow-hidden flex-shrink-0">
+            <img src="media.IMG_5285.jpg" alt="Background" class="w-full h-full object-cover">
+          </div>
+        </div>
+  
+        <!-- Row 3 - moves right -->
+        <div class="photo-row flex gap-4" data-direction="right" style="transform: translateX(-400px);">
+          <div class="w-96 h-56 rounded-xl overflow-hidden flex-shrink-0">
+            <img src="media/IMG_2259.JPG" alt="Background" class="w-full h-full object-cover">
+          </div>
+          <div class="w-96 h-56 rounded-xl overflow-hidden flex-shrink-0">
+            <img src="media/DSC02616.JPG" alt="Background" class="w-full h-full object-cover">
+          </div>
+          <div class="w-96 h-56 rounded-xl overflow-hidden flex-shrink-0">
+            <img src="media/IMG_0464.JPG" alt="Background" class="w-full h-full object-cover">
+          </div>
+          <div class="w-96 h-56 rounded-xl overflow-hidden flex-shrink-0">
+            <img src="media/img_4725.jpeg" alt="Background" class="w-full h-full object-cover">
+          </div>
+          <div class="w-96 h-56 rounded-xl overflow-hidden flex-shrink-0">
+            <img src="media/DSC03455.JPG" alt="Background" class="w-full h-full object-cover">
+          </div>
+          <div class="w-96 h-56 rounded-xl overflow-hidden flex-shrink-0">
+            <img src="media/IMG_2237.JPG" alt="Background" class="w-full h-full object-cover">
+          </div>
+        </div>
+  
+        <!-- Row 4 - moves left -->
+        <div class="photo-row flex gap-4" data-direction="left" style="transform: translateX(-100px);">
+          <div class="w-96 h-56 rounded-xl overflow-hidden flex-shrink-0">
+            <img src="media/DSC00007.jpg" alt="Background" class="w-full h-full object-cover">
+          </div>
+          <div class="w-96 h-56 rounded-xl overflow-hidden flex-shrink-0">
+            <img src="media/img_8572.jpg" alt="Background" class="w-full h-full object-cover">
+          </div>
+          <div class="w-96 h-56 rounded-xl overflow-hidden flex-shrink-0">
+            <img src="media/img_9327.jpg" alt="Background" class="w-full h-full object-cover">
+          </div>
+          <div class="w-96 h-56 rounded-xl overflow-hidden flex-shrink-0">
+            <img src="media/DSC00011.jpg" alt="Background" class="w-full h-full object-cover">
+          </div>
+          <div class="w-96 h-56 rounded-xl overflow-hidden flex-shrink-0">
+            <img src="media/IMG_5285.jpg" alt="Background" class="w-full h-full object-cover">
+          </div>
+          <div class="w-96 h-56 rounded-xl overflow-hidden flex-shrink-0">
+            <img src="media/img_3845.jpeg" alt="Background" class="w-full h-full object-cover">
+          </div>
         </div>
       </div>
-    </div>
-
-    <script>
-      const rows = document.querySelectorAll('.photo-row');
-
-      window.addEventListener('scroll', () => {
-          const scrollY = window.scrollY;
-
-          rows.forEach((row, index) => {
-              const direction = row.dataset.direction;
-              const baseOffset = index % 2 === 0 ? -200 - (index * 100) : -100 + (index * 50);
-              const speed = 0.3 + (index * 0.05);
-
-              if (direction === 'right') {
-                  row.style.transform = `translateX(${baseOffset + (scrollY * speed)}px)`;
-              } else {
-                  row.style.transform = `translateX(${baseOffset - (scrollY * speed)}px)`;
-              }
-          });
-      });
-    </script>
-  </body>
-</html>
+  
+      <!-- Cover Letter -->
+      <div class="relative z-10 flex justify-center items-center min-h-screen py-16 px-4">
+        <div class="bg-white rounded-xl shadow-2xl shadow-slate-400/40 w-full min-h-screen p-12 md:p-16 relative" style="max-width: 768px;">
+          <!-- Portrait Image -->
+          <div class="absolute top-12 right-12 md:top-16 md:right-16">
+            <img src="media/profile_sm.png" alt="Cory MacVie" class="w-24 h-36 rounded-lg object-cover border-2 border-white">
+          </div>
+  
+          <div class="mb-8">
+            <h1 class="text-3xl font-semibold text-slate-900 tracking-tight">
+              Cory MacVie
+            </h1>
+            <p class="text-lg text-slate-500 mt-1">
+              Product Manager Applicant
+            </p>
+          </div>
+  
+          <div class="text-slate-500 mb-8 text-base">
+            <p>December 27, 2025</p>
+          </div>
+  
+          <div class="space-y-4 text-slate-700 leading-relaxed text-base">
+            <p>Dear Hiring Manager,</p>
+            <p>
+              I'm excited to apply for the Product Manager role at Automattic.
+              I've used WordPress for many years and have always admired
+              Automattic's commitment to open, people-first publishing. Few
+              companies have shaped the modern web as meaningfully, and I'd love
+              to contribute to that mission.
+            </p>
+            <p>
+              I'm drawn to Automattic because I care deeply about building
+              products that genuinely improve people's lives. Day One is, in my
+              view, the best personal journaling app available. I regularly
+              recommend it because of the care it shows users, especially the
+              ability to preserve entries as printed books rather than letting
+              them disappear into digital clutter. That attention to user value is
+              exactly the kind of work I want to be part of.
+            </p>
+            <p>
+              Throughout my career, I've led products across SaaS, marketplaces,
+              and platform ecosystems, working closely with engineering and design
+              to turn strategy into shipped outcomes. I'm comfortable operating
+              autonomously, navigating ambiguity, and balancing user needs,
+              business goals, and technical constraints. I value clarity in
+              vision, communication, and execution, particularly in distributed
+              teams.
+            </p>
+            <p>
+              I also strongly align with Automattic's creed. Its principles of
+              ownership, transparency, respect for time, and bias toward action
+              reflect how I already work and lead. I believe great products come
+              from trusted teams that iterate quickly and stay focused on user
+              impact.
+            </p>
+            <p>
+              I'd welcome the opportunity to discuss how my experience and values
+              can help Automattic continue building products that empower creators
+              worldwide.
+            </p>
+            <p>Thank you for your time and consideration.</p>
+            <p class="pt-4">Warm regards,</p>
+  
+            <!-- Signature -->
+            <div class="pt-2">
+              <img src="media/signature2.png">
+            </div>
+  
+            <!-- <p class="font-medium text-slate-900">Cory MacVie</p> -->
+          </div>
+  
+          <div class="mt-10 pt-8 border-t border-slate-100 flex flex-wrap gap-4 text-slate-500 text-sm">
+            <span class="flex items-center gap-2">
+              <span class="iconify" data-icon="lucide:mail" data-width="16" style="stroke-width: 1.5"></span>
+              cory@corymacvie.com
+            </span>
+            <span class="flex items-center gap-2">
+              <span class="iconify" data-icon="lucide:phone" data-width="16" style="stroke-width: 1.5"></span>
+              (909) 435-6551
+            </span>
+          </div>
+        </div>
+      </div>
+  
+      <script>
+        const rows = document.querySelectorAll('.photo-row');
+  
+        window.addEventListener('scroll', () => {
+            const scrollY = window.scrollY;
+  
+            rows.forEach((row, index) => {
+                const direction = row.dataset.direction;
+                const baseOffset = index % 2 === 0 ? -200 - (index * 100) : -100 + (index * 50);
+                const speed = 0.3 + (index * 0.05);
+  
+                if (direction === 'right') {
+                    row.style.transform = `translateX(${baseOffset + (scrollY * speed)}px)`;
+                } else {
+                    row.style.transform = `translateX(${baseOffset - (scrollY * speed)}px)`;
+                }
+            });
+        });
+      </script>
+    
+  </body></html>
