@@ -1,178 +1,300 @@
 <!DOCTYPE html>
-<html lang="en" class="h-full overflow-hidden"><head><meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
-<meta name="apple-mobile-web-app-capable" content="yes">
-<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-<meta name="mobile-web-app-capable" content="yes">
-<title>Cory MacVie - Resume</title>
-<!-- Favicon -->
-<link rel="icon" type="image/svg+xml" href="/favicon.svg">
-<link rel="icon" type="image/png" sizes="32x32" href="media/og-image.png">
-<link rel="icon" type="image/png" sizes="16x16" href="media/og-image.png">
-<link rel="apple-touch-icon" sizes="180x180" href="media/og-image.png">
-<link rel="manifest" href="/site.webmanifest">
-<!-- Open Graph / Facebook -->
-<meta property="og:type" content="website">
-<meta property="og:url" content="https://corymacvie.com/">
-<meta property="og:title" content="Cory MacVie - Agentic Engineer & Product Leader">
-<meta property="og:description" content="Product executive with extensive experience guiding successful SaaS products from concept to market. Skilled in translating complex user needs into intuitive, high-ROI solutions.">
-<meta property="og:image" content="media/og-cory.png">
-<meta property="og:image:width" content="1200">
-<meta property="og:image:height" content="630">
-<!-- Twitter -->
-<meta name="twitter:card" content="media/og-cory.png">
-<meta name="twitter:url" content="https://corymacvie.com/">
-<meta name="twitter:title" content="Cory MacVie - Agentic Engineer & Product Leader">
-<meta name="twitter:description" content="Product executive with extensive experience guiding successful SaaS products from concept to market. Skilled in translating complex user needs into intuitive, high-ROI solutions.">
-<meta name="twitter:image" content="media/og-cory.png">
-<meta name="twitter:creator" content="@corymacvie">
-<!-- Additional Meta -->
-<meta name="description" content="Product leader with extensive experience guiding successful SaaS products from concept to market. Skilled in translating complex user needs into intuitive, high-ROI solutions.">
-<meta name="author" content="Cory MacVie">
-<meta name="theme-color" content="#0f172a">
-<script src="https://cdn.tailwindcss.com"></script>
-<script>
-tailwind.config = { darkMode: 'class' };
-</script>
-<script src="https://code.iconify.design/3/3.1.0/iconify.min.js"></script>
-<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
-<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-<style>
-.work-thumbnails {
-max-height: 0;
-opacity: 0;
-overflow: hidden;
-transition: max-height 0.3s ease, opacity 0.3s ease, margin-top 0.3s ease;
-margin-top: 0;
-}
-.thumbnails-enabled .resume-event:hover .work-thumbnails {
-max-height: 100px;
-opacity: 1;
-margin-top: 0.75rem;
-}
-.quotes-scroll-container {
-height: 220px;
-overflow-y: auto;
-}
-.quotes-scroll-container, #resume-content > div, #panel-content {
-scrollbar-width: thin;
-scrollbar-color: #cbd5e1 transparent;
-}
-.quotes-scroll-container::-webkit-scrollbar, #resume-content > div::-webkit-scrollbar, #panel-content::-webkit-scrollbar {
-width: 6px;
-height: 6px;
-}
-.quotes-scroll-container::-webkit-scrollbar-track, #resume-content > div::-webkit-scrollbar-track, #panel-content::-webkit-scrollbar-track {
-background: transparent;
-}
-.quotes-scroll-container::-webkit-scrollbar-thumb, #resume-content > div::-webkit-scrollbar-thumb, #panel-content::-webkit-scrollbar-thumb {
-background-color: #cbd5e1;
-border-radius: 3px;
-}
-.dark .quotes-scroll-container, .dark #resume-content > div, .dark #panel-content {
-scrollbar-color: #475569 transparent;
-}
-.dark .quotes-scroll-container::-webkit-scrollbar-thumb, .dark #resume-content > div::-webkit-scrollbar-thumb, .dark #panel-content::-webkit-scrollbar-thumb {
-background-color: #475569;
-}
-</style>
-<!-- Google tag (gtag.js) -->
-<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-8G5J4VXJDG"></script>
-<script>
-if (typeof panelContent !== 'undefined') {
-panelContent.apps = {
-title: 'Apps',
-showFooter: false,
-content: `
-<div class="space-y-6">
-<!-- Card 1 -->
-<div class="bg-slate-50 border border-slate-200 rounded-xl overflow-hidden shadow-sm">
-<div class="p-4 border-b border-slate-200">
-<h3 class="text-xs font-semibold text-slate-400 uppercase tracking-wider mb-2">Problem</h3>
-<p class="text-sm text-slate-600 leading-relaxed">People are spending too much time on screens, causing us to lose valuable opportunities for meaningful, deep conversations with one another.</p>
-</div>
-<div class="p-4 bg-white">
-<h3 class="text-xs font-semibold text-slate-400 uppercase tracking-wider mb-2">Solution</h3>
-<a href="https://www.pockit.cards" target="_blank" class="block group">
-<div class="w-full aspect-video bg-slate-100 rounded-lg overflow-hidden mb-3 border border-slate-200 relative">
-<img src="https://image.thum.io/get/width/800/crop/600/https://www.pockit.cards/" alt="Pockit Cards screenshot" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" onerror="this.src='https://images.unsplash.com/photo-1543269664-7eef42226a21?w=800&amp;q=80'">
-</div>
-<div class="flex items-center gap-2 mb-1">
-<span class="text-sm font-semibold text-slate-900 group-hover:text-blue-600 transition-colors">www.pockit.cards</span>
-<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-slate-400 group-hover:text-blue-600"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg>
-</div>
-</a>
-<p class="text-sm text-slate-600 leading-relaxed">A beautifully designed conversation game that people of all ages can carry with them at all times. It sparks connection and depth for any occasion, bridging the gap between digital distraction and human interaction.</p>
-</div>
-</div>
-<!-- Card 2 -->
-<div class="bg-slate-50 border border-slate-200 rounded-xl overflow-hidden shadow-sm">
-<div class="p-4 border-b border-slate-200">
-<h3 class="text-xs font-semibold text-slate-400 uppercase tracking-wider mb-2">Problem</h3>
-<p class="text-sm text-slate-600 leading-relaxed">Keeping track of daily tasks and recording productivity within physical, printed Day One journals creates friction and disjointed workflows.</p>
-</div>
-<div class="p-4 bg-white">
-<h3 class="text-xs font-semibold text-slate-400 uppercase tracking-wider mb-2">Solution</h3>
-<a href="https://daytasks.io" target="_blank" class="block group">
-<div class="w-full aspect-video bg-slate-100 rounded-lg overflow-hidden mb-3 border border-slate-200 relative">
-<img src="https://image.thum.io/get/width/800/crop/600/https://daytasks.io/" alt="DayTasks screenshot" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" onerror="this.src='https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?w=800&amp;q=80'">
-</div>
-<div class="flex items-center gap-2 mb-1">
-<span class="text-sm font-semibold text-slate-900 group-hover:text-blue-600 transition-colors">DayTasks.io</span>
-<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-slate-400 group-hover:text-blue-600"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg>
-</div>
-</a>
-<p class="text-sm text-slate-600 leading-relaxed">A minimalist daily to-do list app designed for frictionless use on both desktop and mobile. It seamlessly syncs and sends your completed lists directly to Day One, maintaining a perfect digital-to-physical journal record.</p>
-</div>
-</div>
-</div>
-`
-};
-}
-</script>
-<style>
-.dark body{background-color:#000000!important}.dark .bg-white{background-color:#1e293b;color:#e2e8f0}.dark .bg-slate-50{background-color:#0f172a}.dark .bg-slate-100{background-color:#020617}.dark .text-slate-900{color:#f8fafc}.dark .text-slate-800{color:#f1f5f9}.dark .text-slate-700{color:#e2e8f0}.dark .text-slate-600{color:#cbd5e1}.dark .text-slate-500{color:#94a3b8}.dark .text-slate-400{color:#64748b}.dark .text-blue-600{color:#60a5fa}.dark .border-slate-200{border-color:#334155}.dark .hover\:bg-slate-50:hover{background-color:#334155}.dark .hover\:bg-slate-100:hover{background-color:#334155}.dark #slideout-panel{background-color:#1e293b}.dark nav{background-color:rgba(30,41,59,0.95);border-color:#334155}.dark .nav-btn{color:#cbd5e1}.dark .nav-btn:hover{color:#f8fafc;background-color:#334155}.dark .leaflet-tile-pane{filter:invert(100%) hue-rotate(180deg) brightness(95%) contrast(90%)}.dark .work-thumbnail{border-color:#334155}
-</style></head>
+<html lang="en" class="h-full overflow-hidden">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover"
+    />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta
+      name="apple-mobile-web-app-status-bar-style"
+      content="black-translucent"
+    />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <title>Cory MacVie - Resume</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" type="image/png" sizes="32x32" href="media/og-image.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="media/og-image.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="media/og-image.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://corymacvie.com/" />
+    <meta
+      property="og:title"
+      content="Cory MacVie - Digital Product Management Leader"
+    />
+    <meta
+      property="og:description"
+      content="Product executive with extensive experience guiding successful SaaS products from concept to market. Skilled in translating complex user needs into intuitive, high-ROI solutions."
+    />
+    <meta property="og:image" content="media/og-cory.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <!-- Twitter -->
+    <meta name="twitter:card" content="media/og-cory.png" />
+    <meta name="twitter:url" content="https://corymacvie.com/" />
+    <meta
+      name="twitter:title"
+      content="Cory MacVie - Digital Product Management Leader"
+    />
+    <meta
+      name="twitter:description"
+      content="Product executive with extensive experience guiding successful SaaS products from concept to market. Skilled in translating complex user needs into intuitive, high-ROI solutions."
+    />
+    <meta name="twitter:image" content="media/og-cory.png" />
+    <meta name="twitter:creator" content="@corymacvie" />
+    <!-- Additional Meta -->
+    <meta
+      name="description"
+      content="Product leader with extensive experience guiding successful SaaS products from concept to market. Skilled in translating complex user needs into intuitive, high-ROI solutions."
+    />
+    <meta name="author" content="Cory MacVie" />
+    <meta name="theme-color" content="#0f172a" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = { darkMode: 'class' };
+    </script>
+    <script src="https://code.iconify.design/3/3.1.0/iconify.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    />
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      .work-thumbnails {
+      max-height: 0;
+      opacity: 0;
+      overflow: hidden;
+      transition: max-height 0.3s ease, opacity 0.3s ease, margin-top 0.3s ease;
+      margin-top: 0;
+      }
+      .thumbnails-enabled .resume-event:hover .work-thumbnails {
+      max-height: 100px;
+      opacity: 1;
+      margin-top: 0.75rem;
+      }
+      .quotes-scroll-container {
+      height: 220px;
+      overflow-y: auto;
+      }
+      .quotes-scroll-container, #resume-content > div, #panel-content {
+      scrollbar-width: thin;
+      scrollbar-color: #cbd5e1 transparent;
+      }
+      .quotes-scroll-container::-webkit-scrollbar, #resume-content > div::-webkit-scrollbar, #panel-content::-webkit-scrollbar {
+      width: 6px;
+      height: 6px;
+      }
+      .quotes-scroll-container::-webkit-scrollbar-track, #resume-content > div::-webkit-scrollbar-track, #panel-content::-webkit-scrollbar-track {
+      background: transparent;
+      }
+      .quotes-scroll-container::-webkit-scrollbar-thumb, #resume-content > div::-webkit-scrollbar-thumb, #panel-content::-webkit-scrollbar-thumb {
+      background-color: #cbd5e1;
+      border-radius: 3px;
+      }
+      .dark .quotes-scroll-container, .dark #resume-content > div, .dark #panel-content {
+      scrollbar-color: #475569 transparent;
+      }
+      .dark .quotes-scroll-container::-webkit-scrollbar-thumb, .dark #resume-content > div::-webkit-scrollbar-thumb, .dark #panel-content::-webkit-scrollbar-thumb {
+      background-color: #475569;
+      }
+    </style>
+    <!-- Google tag (gtag.js) -->
+    <script
+      async=""
+      src="https://www.googletagmanager.com/gtag/js?id=G-8G5J4VXJDG"
+    ></script>
+    <script>
+      if (typeof panelContent !== 'undefined') {
+        panelContent.apps = {
+          title: 'Personal App Builds',
+          showFooter: false,
+          content: `
+            <div class="space-y-6">
+              <!-- Card 1 -->
+               <div class="bg-white border border-slate-200 rounded-xl overflow-hidden shadow-sm flex flex-col sm:flex-row">
+                <div class="p-4 bg-slate-50 border-b sm:border-b-0 sm:border-r border-slate-200 sm:w-1/2">
+                  <h3 class="text-xs font-semibold text-slate-400 uppercase tracking-wider mb-2">Problem</h3>
+                  <p class="text-sm text-slate-600 leading-relaxed">Keeping track of daily tasks and recording productivity within physical, printed Day One journals creates friction and disjointed workflows.</p>
+                </div>
+                <div class="p-4 sm:w-1/2">
+                  <h3 class="text-xs font-semibold text-slate-400 uppercase tracking-wider mb-2">Solution</h3>
+                  <a href="https://daytasks.io" target="_blank" class="block group/link mb-3">
+                    <div class="w-full aspect-video bg-slate-100 rounded-lg overflow-hidden mb-2 border border-slate-200 relative">
+                      <img src="media/portfolio/daytasks.jpg" alt="DayTasks screenshot" class="w-full h-full object-cover group-hover/link:scale-105 transition-transform duration-300" onerror="this.src='media/daytasks.io_sm.jpg'">
+                    </div>
+                    <div class="flex items-center gap-2">
+                      <span class="text-sm font-semibold text-slate-900 group-hover/link:text-blue-600 transition-colors">DayTasks.io</span>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-slate-400 group-hover/link:text-blue-600"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg>
+                    </div>
+                  </a>
+                  <p class="text-sm text-slate-600 leading-relaxed">A minimalist daily to-do list app designed for frictionless use on both desktop and mobile. It seamlessly syncs and sends your completed lists directly to Day One, maintaining a perfect digital-to-physical journal record.</p>
+                </div>
+              </div>
 
-  <body class="bg-white font-['Inter'] antialiased overflow-hidden h-screen w-full">
+              <!-- Card 2 -->
+             <div class="bg-white border border-slate-200 rounded-xl overflow-hidden shadow-sm flex flex-col sm:flex-row">
+                <div class="p-4 bg-slate-50 border-b sm:border-b-0 sm:border-r border-slate-200 sm:w-1/2">
+                  <h3 class="text-xs font-semibold text-slate-400 uppercase tracking-wider mb-2">Problem</h3>
+                  <p class="text-sm text-slate-600 leading-relaxed">People are spending too much time on endless social feeds, causing us to lose valuable opportunities for meaningful, deep conversations with one another.</p>
+                </div>
+                <div class="p-4 sm:w-1/2">
+                  <h3 class="text-xs font-semibold text-slate-400 uppercase tracking-wider mb-2">Solution</h3>
+                  <a href="https://www.pockittalk.com" target="_blank" class="block group/link mb-3">
+                    <div class="w-full aspect-video bg-slate-100 rounded-lg overflow-hidden mb-2 border border-slate-200 relative">
+                      <img src="media/portfolio/pockittalk_sm.jpg" alt="Pockit Cards screenshot" class="w-full h-full object-cover group-hover/link:scale-105 transition-transform duration-300" onerror="this.src='media/pockittalk_sm.jpg'">
+                    </div>
+                    <div class="flex items-center gap-2">
+                      <span class="text-sm font-semibold text-slate-900 group-hover/link:text-blue-600 transition-colors">PockitTalk.com</span>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-slate-400 group-hover/link:text-blue-600"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg>
+                    </div>
+                  </a>
+                  <p class="text-sm text-slate-600 leading-relaxed">A beautifully designed conversation game that people of all ages can carry with them at all times. It sparks connection and depth for any occasion, bridging the gap between digital distraction and human interaction.</p>
+                </div>
+              </div>
+
+              <!-- Card 3 -->
+              <div class="bg-white border border-slate-200 rounded-xl overflow-hidden shadow-sm flex flex-col sm:flex-row">
+                <div class="p-4 bg-slate-50 border-b sm:border-b-0 sm:border-r border-slate-200 sm:w-1/2">
+                  <h3 class="text-xs font-semibold text-slate-400 uppercase tracking-wider mb-2">Problem</h3>
+                  <p class="text-sm text-slate-600 leading-relaxed">Friends and internet inquiries frequently expressed a desire to host their own interactive geospatial resumes to better showcase their experiences.</p>
+                </div>
+                <div class="p-4 sm:w-1/2">
+                  <h3 class="text-xs font-semibold text-slate-400 uppercase tracking-wider mb-2">Solution</h3>
+                  <a href="https://georesume.io" target="_blank" class="block group/link mb-3">
+                    <div class="w-full aspect-video bg-slate-100 rounded-lg overflow-hidden mb-2 border border-slate-200 relative">
+                      <img src="media/portfolio/georesume.jpg" alt="GeoResume screenshot" class="w-full h-full object-cover group-hover/link:scale-105 transition-transform duration-300" onerror="this.src='media/goeresume_sm.jpg'">
+                    </div>
+                    <div class="flex items-center gap-2">
+                      <span class="text-sm font-semibold text-slate-900 group-hover/link:text-blue-600 transition-colors">GeoResume.io</span>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-slate-400 group-hover/link:text-blue-600"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg>
+                    </div>
+                  </a>
+                  <p class="text-sm text-slate-600 leading-relaxed">A platform for individuals to easily create, host, and share their own interactive geospatial resumes, transforming traditional work history into an engaging map-based experience.</p>
+                </div>
+              </div>
+            </div>
+          `
+        };
+      }
+    </script>
+    <style>
+      .dark body{background-color:#000000!important}.dark .bg-white{background-color:#1e293b;color:#e2e8f0}.dark .bg-slate-50{background-color:#0f172a}.dark .bg-slate-100{background-color:#020617}.dark .text-slate-900{color:#f8fafc}.dark .text-slate-800{color:#f1f5f9}.dark .text-slate-700{color:#e2e8f0}.dark .text-slate-600{color:#cbd5e1}.dark .text-slate-500{color:#94a3b8}.dark .text-slate-400{color:#64748b}.dark .text-blue-600{color:#60a5fa}.dark .border-slate-200{border-color:#334155}.dark .hover\:bg-slate-50:hover{background-color:#334155}.dark .hover\:bg-slate-100:hover{background-color:#334155}.dark #slideout-panel{background-color:#1e293b}.dark nav{background-color:rgba(30,41,59,0.95);border-color:#334155}.dark .nav-btn{color:#cbd5e1}.dark .nav-btn:hover{color:#f8fafc;background-color:#334155}.dark .leaflet-tile-pane{filter:invert(100%) hue-rotate(180deg) brightness(95%) contrast(90%)}.dark .work-thumbnail{border-color:#334155}
+    </style>
+  </head>
+
+  <body
+    class="bg-white font-['Inter'] antialiased overflow-hidden h-screen w-full"
+  >
     <!-- Full Screen Map Background -->
-    <div id="map" class="fixed inset-0 w-full h-full z-0 leaflet-container leaflet-touch leaflet-retina leaflet-fade-anim leaflet-grab leaflet-touch-drag leaflet-touch-zoom" tabindex="0"></div>
+    <div
+      id="map"
+      class="fixed inset-0 w-full h-full z-0 leaflet-container leaflet-touch leaflet-retina leaflet-fade-anim leaflet-grab leaflet-touch-drag leaflet-touch-zoom"
+      tabindex="0"
+    ></div>
 
     <!-- Desktop Navigation Menu -->
 
     <!-- Slide-out Overlay -->
-    <div id="slideout-overlay" class="fixed inset-0 bg-black/20 z-40 opacity-0 pointer-events-none transition-opacity duration-300"></div>
+    <div
+      id="slideout-overlay"
+      class="fixed inset-0 bg-black/20 z-40 opacity-0 pointer-events-none transition-opacity duration-300"
+    ></div>
 
     <!-- Slide-out Panel -->
-    <div id="slideout-panel" class="fixed top-0 right-0 h-full w-full md:max-w-md bg-white z-50 shadow-2xl transform translate-x-full transition-transform duration-300 ease-out">
+    <div
+      id="slideout-panel"
+      class="fixed top-0 right-0 h-full w-full md:max-w-md bg-white z-50 shadow-2xl transform translate-x-full transition-transform duration-300 ease-out"
+    >
       <div class="h-full flex flex-col">
         <!-- Panel Header -->
-        <div class="flex items-center justify-between p-6 border-b border-slate-200">
-          <h2 id="panel-title" class="text-lg font-semibold text-slate-900 tracking-tight">
+        <div
+          class="flex items-center justify-between p-6 border-b border-slate-200"
+        >
+          <h2
+            id="panel-title"
+            class="text-lg font-semibold text-slate-900 tracking-tight"
+          >
             About Me
           </h2>
-          <button id="close-panel" class="p-2 hover:bg-slate-100 rounded-lg transition-colors">
-            <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" width="20" height="20" viewBox="0 0 24 24" data-icon="lucide:x" data-width="20" style="stroke-width: 1.5" class="iconify text-slate-500 iconify--lucide">
-              <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18 6L6 18M6 6l12 12"></path>
+          <button
+            id="close-panel"
+            class="p-2 hover:bg-slate-100 rounded-lg transition-colors"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              aria-hidden="true"
+              role="img"
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+              data-icon="lucide:x"
+              data-width="20"
+              style="stroke-width: 1.5"
+              class="iconify text-slate-500 iconify--lucide"
+            >
+              <path
+                fill="none"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M18 6L6 18M6 6l12 12"
+              ></path>
             </svg>
           </button>
         </div>
         <!-- Panel Content -->
         <div id="panel-content" class="flex-1 overflow-y-auto p-6 pb-32"></div>
         <!-- Fixed Footer for Work Panel -->
-        <div id="panel-footer" class="hidden border-t border-slate-200 bg-white p-4 space-y-2">
-          <a href="https://zcal.co/corymacvie" target="_blank" class="flex items-center justify-center gap-2 w-full p-3 bg-slate-900 text-white rounded-lg hover:bg-slate-800 transition-all text-sm font-medium dark:bg-white dark:text-slate-900 dark:hover:bg-slate-200">
-            <span class="iconify" data-icon="lucide:calendar" data-width="18" style="stroke-width: 1.5"></span>
+        <div
+          id="panel-footer"
+          class="hidden border-t border-slate-200 bg-white p-4 space-y-2"
+        >
+          <a
+            href="https://zcal.co/corymacvie"
+            target="_blank"
+            class="flex items-center justify-center gap-2 w-full p-3 bg-slate-900 text-white rounded-lg hover:bg-slate-800 transition-all text-sm font-medium dark:bg-white dark:text-slate-900 dark:hover:bg-slate-200"
+          >
+            <span
+              class="iconify"
+              data-icon="lucide:calendar"
+              data-width="18"
+              style="stroke-width: 1.5"
+            ></span>
             Schedule a Call
           </a>
           <div class="flex gap-2 mt-2">
-            <a href="mailto:cory@corymacvie.com" class="flex items-center justify-center gap-2 flex-1 p-3 border border-slate-200 text-slate-700 rounded-lg hover:bg-slate-50 transition-all text-sm font-medium">
-              <span class="iconify" data-icon="lucide:mail" data-width="18" style="stroke-width: 1.5"></span>
+            <a
+              href="mailto:cory@corymacvie.com"
+              class="flex items-center justify-center gap-2 flex-1 p-3 border border-slate-200 text-slate-700 rounded-lg hover:bg-slate-50 transition-all text-sm font-medium"
+            >
+              <span
+                class="iconify"
+                data-icon="lucide:mail"
+                data-width="18"
+                style="stroke-width: 1.5"
+              ></span>
               Email me
             </a>
-            <a href="http://www.linkedin.com/in/macvie" target="_blank" class="flex items-center justify-center gap-2 flex-1 p-3 border border-slate-200 text-slate-700 rounded-lg hover:bg-slate-50 transition-all text-sm font-medium">
-              <span class="iconify" data-icon="lucide:linkedin" data-width="18" style="stroke-width: 1.5"></span>
+            <a
+              href="http://www.linkedin.com/in/macvie"
+              target="_blank"
+              class="flex items-center justify-center gap-2 flex-1 p-3 border border-slate-200 text-slate-700 rounded-lg hover:bg-slate-50 transition-all text-sm font-medium"
+            >
+              <span
+                class="iconify"
+                data-icon="lucide:linkedin"
+                data-width="18"
+                style="stroke-width: 1.5"
+              ></span>
               Connect with me
             </a>
           </div>
@@ -181,107 +303,391 @@ content: `
     </div>
 
     <!-- Image Lightbox -->
-    <div id="lightbox" class="fixed inset-0 bg-black/90 z-60 opacity-0 pointer-events-none transition-opacity duration-300 flex items-center justify-center p-4 md:p-8 hidden" style="z-index: 60;">
-      <button id="lightbox-close" class="absolute top-4 right-4 p-2 bg-white/10 hover:bg-white/20 rounded-full transition-colors z-10">
-        <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" width="24" height="24" viewBox="0 0 24 24" data-icon="lucide:x" data-width="24" style="stroke-width: 1.5" class="iconify text-white iconify--lucide">
-          <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18 6L6 18M6 6l12 12"></path>
+    <div
+      id="lightbox"
+      class="fixed inset-0 bg-black/90 z-60 opacity-0 pointer-events-none transition-opacity duration-300 flex items-center justify-center p-4 md:p-8 hidden"
+      style="z-index: 60;"
+    >
+      <button
+        id="lightbox-close"
+        class="absolute top-4 right-4 p-2 bg-white/10 hover:bg-white/20 rounded-full transition-colors z-10"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          aria-hidden="true"
+          role="img"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          data-icon="lucide:x"
+          data-width="24"
+          style="stroke-width: 1.5"
+          class="iconify text-white iconify--lucide"
+        >
+          <path
+            fill="none"
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M18 6L6 18M6 6l12 12"
+          ></path>
         </svg>
       </button>
-      <button id="lightbox-prev" class="absolute left-4 top-1/2 -translate-y-1/2 p-3 bg-white/10 hover:bg-white/20 rounded-full transition-colors z-10">
-        <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" width="24" height="24" viewBox="0 0 24 24" style="stroke-width: 1.5" class="text-white">
-          <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m15 18-6-6 6-6"></path>
+      <button
+        id="lightbox-prev"
+        class="absolute left-4 top-1/2 -translate-y-1/2 p-3 bg-white/10 hover:bg-white/20 rounded-full transition-colors z-10"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          aria-hidden="true"
+          role="img"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          style="stroke-width: 1.5"
+          class="text-white"
+        >
+          <path
+            fill="none"
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="m15 18-6-6 6-6"
+          ></path>
         </svg>
       </button>
-      <button id="lightbox-next" class="absolute right-4 top-1/2 -translate-y-1/2 p-3 bg-white/10 hover:bg-white/20 rounded-full transition-colors z-10">
-        <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" width="24" height="24" viewBox="0 0 24 24" style="stroke-width: 1.5" class="text-white">
-          <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m9 18 6-6-6-6"></path>
+      <button
+        id="lightbox-next"
+        class="absolute right-4 top-1/2 -translate-y-1/2 p-3 bg-white/10 hover:bg-white/20 rounded-full transition-colors z-10"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          aria-hidden="true"
+          role="img"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          style="stroke-width: 1.5"
+          class="text-white"
+        >
+          <path
+            fill="none"
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="m9 18 6-6-6-6"
+          ></path>
         </svg>
       </button>
       <div class="flex flex-col items-center max-w-full max-h-full">
-        <img id="lightbox-image" src="" alt="Work sample" class="max-w-full max-h-[calc(100vh-120px)] object-contain rounded-lg shadow-2xl">
-        <p id="lightbox-caption" class="text-white text-sm mt-4 text-center max-w-lg opacity-80"></p>
+        <img
+          id="lightbox-image"
+          src=""
+          alt="Work sample"
+          class="max-w-full max-h-[calc(100vh-120px)] object-contain rounded-lg shadow-2xl"
+        />
+        <p
+          id="lightbox-caption"
+          class="text-white text-sm mt-4 text-center max-w-lg opacity-80"
+        ></p>
         <p id="lightbox-counter" class="text-white/50 text-xs mt-2"></p>
       </div>
     </div>
 
     <!-- Floating Resume Container -->
-    <div id="resume-container" class="relative z-20 flex items-start justify-start p-2 md:p-3 lg:p-4 thumbnails-enabled flex-col gap-2 h-full overflow-hidden">
-      <nav class="z-30 flex flex-wrap md:flex-nowrap gap-1 md:gap-2 bg-white/95 border-slate-200/50 border rounded-xl p-2 shadow-lg backdrop-blur-sm items-center w-full max-w-[676px] md:w-auto md:max-w-none md:fixed md:top-3 md:right-3 lg:top-4 lg:right-4">
-        <button onclick="openPanel('about')" class="nav-btn flex-1 md:flex-none justify-center md:justify-start flex items-center gap-2 px-2 md:px-3 py-2 text-sm text-slate-600 hover:text-slate-900 hover:bg-slate-100 rounded-lg transition-all">
-          <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" width="16" height="16" viewBox="0 0 24 24" data-icon="lucide:user" data-width="16" style="stroke-width: 1.5" class="iconify iconify--lucide">
-            <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+    <div
+      id="resume-container"
+      class="relative z-20 flex items-start justify-start p-2 md:p-3 lg:p-4 thumbnails-enabled flex-col gap-2 h-full overflow-hidden"
+    >
+      <nav
+        class="z-30 flex flex-wrap md:flex-nowrap gap-1 md:gap-2 bg-white/95 border-slate-200/50 border rounded-xl p-2 shadow-lg backdrop-blur-sm items-center w-full max-w-[676px] md:w-auto md:max-w-none md:fixed md:top-3 md:right-3 lg:top-4 lg:right-4"
+      >
+        <button
+          onclick="openPanel('about')"
+          class="nav-btn flex-1 md:flex-none justify-center md:justify-start flex items-center gap-2 px-2 md:px-3 py-2 text-sm text-slate-600 hover:text-slate-900 hover:bg-slate-100 rounded-lg transition-all"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            aria-hidden="true"
+            role="img"
+            width="16"
+            height="16"
+            viewBox="0 0 24 24"
+            data-icon="lucide:user"
+            data-width="16"
+            style="stroke-width: 1.5"
+            class="iconify iconify--lucide"
+          >
+            <g
+              fill="none"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+            >
               <path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"></path>
               <circle cx="12" cy="7" r="4"></circle>
             </g>
           </svg>
           <span>About</span>
         </button>
-        <button onclick="openPanel('posts')" class="nav-btn flex-1 md:flex-none justify-center md:justify-start flex items-center gap-2 px-2 md:px-3 py-2 text-sm text-slate-600 hover:text-slate-900 hover:bg-slate-100 rounded-lg transition-all">
-          <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" width="16" height="16" viewBox="0 0 24 24" data-icon="lucide:pen-line" data-width="16" style="stroke-width: 1.5" class="iconify iconify--lucide">
-            <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 21h8m.174-14.188a1 1 0 0 0-3.986-3.987L3.842 16.174a2 2 0 0 0-.5.83l-1.321 4.352a.5.5 0 0 0 .623.622l4.353-1.32a2 2 0 0 0 .83-.497z"></path>
+        <button
+          onclick="openPanel('posts')"
+          class="nav-btn flex-1 md:flex-none justify-center md:justify-start flex items-center gap-2 px-2 md:px-3 py-2 text-sm text-slate-600 hover:text-slate-900 hover:bg-slate-100 rounded-lg transition-all"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            aria-hidden="true"
+            role="img"
+            width="16"
+            height="16"
+            viewBox="0 0 24 24"
+            data-icon="lucide:pen-line"
+            data-width="16"
+            style="stroke-width: 1.5"
+            class="iconify iconify--lucide"
+          >
+            <path
+              fill="none"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M13 21h8m.174-14.188a1 1 0 0 0-3.986-3.987L3.842 16.174a2 2 0 0 0-.5.83l-1.321 4.352a.5.5 0 0 0 .623.622l4.353-1.32a2 2 0 0 0 .83-.497z"
+            ></path>
           </svg>
           <span class="">Posts</span>
         </button>
-        <button onclick="openPanel('books')" class="nav-btn flex-1 md:flex-none justify-center md:justify-start flex items-center gap-2 px-2 md:px-3 py-2 text-sm text-slate-600 hover:text-slate-900 hover:bg-slate-100 rounded-lg transition-all">
-          <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" width="16" height="16" viewBox="0 0 24 24" data-icon="lucide:book-open" data-width="16" style="stroke-width: 1.5" class="iconify iconify--lucide">
-            <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 7v14m-9-3a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h5a4 4 0 0 1 4 4a4 4 0 0 1 4-4h5a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1h-6a3 3 0 0 0-3 3a3 3 0 0 0-3-3z"></path>
+        <button
+          onclick="openPanel('books')"
+          class="nav-btn flex-1 md:flex-none justify-center md:justify-start flex items-center gap-2 px-2 md:px-3 py-2 text-sm text-slate-600 hover:text-slate-900 hover:bg-slate-100 rounded-lg transition-all"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            aria-hidden="true"
+            role="img"
+            width="16"
+            height="16"
+            viewBox="0 0 24 24"
+            data-icon="lucide:book-open"
+            data-width="16"
+            style="stroke-width: 1.5"
+            class="iconify iconify--lucide"
+          >
+            <path
+              fill="none"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M12 7v14m-9-3a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h5a4 4 0 0 1 4 4a4 4 0 0 1 4-4h5a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1h-6a3 3 0 0 0-3 3a3 3 0 0 0-3-3z"
+            ></path>
           </svg>
           <span>Books</span>
         </button>
-        <button onclick="openPanel('apps')" class="nav-btn flex-1 md:flex-none justify-center md:justify-start flex items-center gap-2 px-2 md:px-3 py-2 text-sm text-slate-600 hover:text-slate-900 hover:bg-slate-100 rounded-lg transition-all">
-          <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" width="16" height="16" viewBox="0 0 24 24" data-icon="lucide:app-window" data-width="16" style="stroke-width: 1.5" class="iconify iconify--lucide">
-            <rect width="7" height="7" x="3" y="3" rx="1" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></rect>
-            <rect width="7" height="7" x="14" y="3" rx="1" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></rect>
-            <rect width="7" height="7" x="14" y="14" rx="1" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></rect>
-            <rect width="7" height="7" x="3" y="14" rx="1" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></rect>
+        <button
+          onclick="openPanel('apps')"
+          class="nav-btn flex-1 md:flex-none justify-center md:justify-start flex items-center gap-2 px-2 md:px-3 py-2 text-sm text-slate-600 hover:text-slate-900 hover:bg-slate-100 rounded-lg transition-all"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            aria-hidden="true"
+            role="img"
+            width="16"
+            height="16"
+            viewBox="0 0 24 24"
+            data-icon="lucide:app-window"
+            data-width="16"
+            style="stroke-width: 1.5"
+            class="iconify iconify--lucide"
+          >
+            <rect
+              width="7"
+              height="7"
+              x="3"
+              y="3"
+              rx="1"
+              fill="none"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+            ></rect>
+            <rect
+              width="7"
+              height="7"
+              x="14"
+              y="3"
+              rx="1"
+              fill="none"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+            ></rect>
+            <rect
+              width="7"
+              height="7"
+              x="14"
+              y="14"
+              rx="1"
+              fill="none"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+            ></rect>
+            <rect
+              width="7"
+              height="7"
+              x="3"
+              y="14"
+              rx="1"
+              fill="none"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+            ></rect>
           </svg>
           <span>Apps</span>
         </button>
         <div class="w-full md:hidden"></div>
         <div class="hidden md:block w-px h-6 bg-slate-200 mx-1"></div>
-        <button onclick="openPanel('work')" class="w-full md:w-auto justify-center flex hover:bg-slate-800 transition-all text-sm font-medium text-white bg-slate-900 rounded-lg pt-2 pr-4 pb-2 pl-4 gap-x-2 gap-y-2 items-center dark:bg-white dark:text-slate-900 dark:hover:bg-slate-200">
-          <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" width="16" height="16" viewBox="0 0 24 24" data-icon="lucide:rocket" data-width="16" style="stroke-width: 1.5" class="iconify iconify--lucide">
-            <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
-              <path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09M12 15l-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.4 22.4 0 0 1-4 2"></path>
-              <path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 0 5 0m1 7v5s3.03-.55 4-2c1.08-1.62 0-5 0-5"></path>
+        <button
+          onclick="openPanel('work')"
+          class="w-full md:w-auto justify-center flex hover:bg-slate-800 transition-all text-sm font-medium text-white bg-slate-900 rounded-lg pt-2 pr-4 pb-2 pl-4 gap-x-2 gap-y-2 items-center dark:bg-white dark:text-slate-900 dark:hover:bg-slate-200"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            aria-hidden="true"
+            role="img"
+            width="16"
+            height="16"
+            viewBox="0 0 24 24"
+            data-icon="lucide:rocket"
+            data-width="16"
+            style="stroke-width: 1.5"
+            class="iconify iconify--lucide"
+          >
+            <g
+              fill="none"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+            >
+              <path
+                d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09M12 15l-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.4 22.4 0 0 1-4 2"
+              ></path>
+              <path
+                d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 0 5 0m1 7v5s3.03-.55 4-2c1.08-1.62 0-5 0-5"
+              ></path>
             </g>
           </svg>
           <span>Work with Me</span>
         </button>
       </nav>
-      <div class="w-full bg-white rounded-xl shadow-2xl overflow-hidden flex-1 min-h-0 flex flex-col transition-all duration-300 ease-in-out" style="max-width: 676px; max-height: calc(100vh - 2rem);" id="resume-content">
+      <div
+        class="w-full bg-white rounded-xl shadow-2xl overflow-hidden flex-1 min-h-0 flex flex-col transition-all duration-300 ease-in-out"
+        style="max-width: 676px; max-height: calc(100vh - 2rem);"
+        id="resume-content"
+      >
         <!-- Resume Content -->
-        <div class="h-full overflow-y-auto" style="max-height: calc(100vh - 2rem);">
+        <div
+          class="h-full overflow-y-auto"
+          style="max-height: calc(100vh - 2rem);"
+        >
           <div class="md:p-8 px-6 py-6">
             <!-- Header -->
             <header class="mb-6 border-b border-slate-200 pb-5">
               <div class="flex gap-5">
                 <!-- Portrait Image -->
                 <div class="flex-shrink-0">
-                  <img src="media/profile.png" alt="Cory MacVie" class="w-20 h-30 object-cover">
+                  <img
+                    src="media/profile.png"
+                    alt="Cory MacVie"
+                    class="w-20 h-30 object-cover"
+                  />
                 </div>
                 <!-- Header Content -->
                 <div class="flex-1 flex justify-between items-start">
                   <div>
-                    <h1 class="text-2xl font-semibold text-slate-900 tracking-tight mb-1">
+                    <h1
+                      class="text-2xl font-semibold text-slate-900 tracking-tight mb-1"
+                    >
                       Cory MacVie
                     </h1>
-                    <p class="text-sm text-slate-600 mb-3">Agentic Engineer & Product Leader</p>
+                    <p class="text-sm text-slate-600 mb-3">
+                      Digital Product Management Leader
+                    </p>
                     <div class="flex flex-wrap gap-3 text-xs text-slate-500">
                       <span class="flex items-center gap-1">
-                        <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" width="14" height="14" viewBox="0 0 24 24" data-icon="lucide:house" data-width="14" style="stroke-width: 1.5" class="iconify iconify--lucide">
-                          <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
-                            <path d="M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8"></path>
-                            <path d="M3 10a2 2 0 0 1 .709-1.528l7-5.999a2 2 0 0 1 2.582 0l7 5.999A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          aria-hidden="true"
+                          role="img"
+                          width="14"
+                          height="14"
+                          viewBox="0 0 24 24"
+                          data-icon="lucide:house"
+                          data-width="14"
+                          style="stroke-width: 1.5"
+                          class="iconify iconify--lucide"
+                        >
+                          <g
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                          >
+                            <path
+                              d="M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8"
+                            ></path>
+                            <path
+                              d="M3 10a2 2 0 0 1 .709-1.528l7-5.999a2 2 0 0 1 2.582 0l7 5.999A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"
+                            ></path>
                           </g>
                         </svg>
                         Los Angeles, CA
                       </span>
-                      <a href="mailto:cory@corymacvie.com" class="flex items-center gap-1 hover:text-slate-700 transition-colors">
-                        <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" width="14" height="14" viewBox="0 0 24 24" data-icon="lucide:mail" data-width="14" style="stroke-width: 1.5" class="iconify iconify--lucide">
-                          <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
-                            <path d="m22 7l-8.991 5.727a2 2 0 0 1-2.009 0L2 7"></path>
-                            <rect width="20" height="16" x="2" y="4" rx="2"></rect>
+                      <a
+                        href="mailto:cory@corymacvie.com"
+                        class="flex items-center gap-1 hover:text-slate-700 transition-colors"
+                      >
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          aria-hidden="true"
+                          role="img"
+                          width="14"
+                          height="14"
+                          viewBox="0 0 24 24"
+                          data-icon="lucide:mail"
+                          data-width="14"
+                          style="stroke-width: 1.5"
+                          class="iconify iconify--lucide"
+                        >
+                          <g
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                          >
+                            <path
+                              d="m22 7l-8.991 5.727a2 2 0 0 1-2.009 0L2 7"
+                            ></path>
+                            <rect
+                              width="20"
+                              height="16"
+                              x="2"
+                              y="4"
+                              rx="2"
+                            ></rect>
                           </g>
                         </svg>
                         cory@corymacvie.com
@@ -290,38 +696,145 @@ content: `
                   </div>
                   <div class="flex flex-col items-end gap-3">
                     <div class="flex flex-col md:flex-row gap-1">
-                      <a href="http://www.linkedin.com/in/macvie" target="_blank" class="p-1 text-slate-400 hover:text-slate-600 hover:bg-slate-100 rounded-lg transition-all">
-                        <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" width="14" height="14" viewBox="0 0 24 24" data-icon="lucide:linkedin" data-width="14" style="stroke-width: 1.5" class="iconify iconify--lucide w-3.5 h-3.5 md:w-5 md:h-5">
-                          <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
-                            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2a2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6M2 9h4v12H2z"></path>
+                      <a
+                        href="http://www.linkedin.com/in/macvie"
+                        target="_blank"
+                        class="p-1 text-slate-400 hover:text-slate-600 hover:bg-slate-100 rounded-lg transition-all"
+                      >
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          aria-hidden="true"
+                          role="img"
+                          width="14"
+                          height="14"
+                          viewBox="0 0 24 24"
+                          data-icon="lucide:linkedin"
+                          data-width="14"
+                          style="stroke-width: 1.5"
+                          class="iconify iconify--lucide w-3.5 h-3.5 md:w-5 md:h-5"
+                        >
+                          <g
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                          >
+                            <path
+                              d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2a2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6M2 9h4v12H2z"
+                            ></path>
                             <circle cx="4" cy="4" r="2"></circle>
                           </g>
                         </svg>
                       </a>
-                      <a href="https://instagram.com/whatsupcory" target="_blank" class="p-1 text-slate-400 hover:text-slate-600 hover:bg-slate-100 rounded-lg transition-all">
-                        <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" width="14" height="14" viewBox="0 0 24 24" data-icon="lucide:instagram" data-width="14" style="stroke-width: 1.5" class="iconify iconify--lucide w-3.5 h-3.5 md:w-5 md:h-5">
-                          <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
-                            <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
-                            <path d="M16 11.37A4 4 0 1 1 12.63 8A4 4 0 0 1 16 11.37m1.5-4.87h.01"></path>
+                      <a
+                        href="https://instagram.com/whatsupcory"
+                        target="_blank"
+                        class="p-1 text-slate-400 hover:text-slate-600 hover:bg-slate-100 rounded-lg transition-all"
+                      >
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          aria-hidden="true"
+                          role="img"
+                          width="14"
+                          height="14"
+                          viewBox="0 0 24 24"
+                          data-icon="lucide:instagram"
+                          data-width="14"
+                          style="stroke-width: 1.5"
+                          class="iconify iconify--lucide w-3.5 h-3.5 md:w-5 md:h-5"
+                        >
+                          <g
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                          >
+                            <rect
+                              width="20"
+                              height="20"
+                              x="2"
+                              y="2"
+                              rx="5"
+                              ry="5"
+                            ></rect>
+                            <path
+                              d="M16 11.37A4 4 0 1 1 12.63 8A4 4 0 0 1 16 11.37m1.5-4.87h.01"
+                            ></path>
                           </g>
                         </svg>
                       </a>
-                      <a href="http://x.com/corymacvie" target="_blank" class="p-1 text-slate-400 hover:text-slate-600 hover:bg-slate-100 rounded-lg transition-all">
-                        <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" width="14" height="14" viewBox="0 0 24 24" data-icon="lucide:twitter" data-width="14" style="stroke-width: 1.5" class="iconify iconify--lucide w-3.5 h-3.5 md:w-5 md:h-5">
-                          <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6c2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4c-.9-4.2 4-6.6 7-3.8c1.1 0 3-1.2 3-1.2"></path>
+                      <a
+                        href="http://x.com/corymacvie"
+                        target="_blank"
+                        class="p-1 text-slate-400 hover:text-slate-600 hover:bg-slate-100 rounded-lg transition-all"
+                      >
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          aria-hidden="true"
+                          role="img"
+                          width="14"
+                          height="14"
+                          viewBox="0 0 24 24"
+                          data-icon="lucide:twitter"
+                          data-width="14"
+                          style="stroke-width: 1.5"
+                          class="iconify iconify--lucide w-3.5 h-3.5 md:w-5 md:h-5"
+                        >
+                          <path
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6c2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4c-.9-4.2 4-6.6 7-3.8c1.1 0 3-1.2 3-1.2"
+                          ></path>
                         </svg>
                       </a>
-                      <a href="https://github.com/corymacvie" target="_blank" class="p-1 text-slate-400 hover:text-slate-600 hover:bg-slate-100 rounded-lg transition-all">
-                        <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" width="14" height="14" viewBox="0 0 24 24" data-icon="lucide:github" data-width="14" style="stroke-width: 1.5" class="iconify iconify--lucide w-3.5 h-3.5 md:w-5 md:h-5">
-                          <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5c.08-1.25-.27-2.48-1-3.5c.28-1.15.28-2.35 0-3.5c0 0-1 0-3 1.5c-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5c-.39.49-.68 1.05-.85 1.65c-.17.6-.22 1.23-.15 1.85v4m-4-2c.64 1.37 1.98 2 4 2"></path>
+                      <a
+                        href="https://github.com/corymacvie"
+                        target="_blank"
+                        class="p-1 text-slate-400 hover:text-slate-600 hover:bg-slate-100 rounded-lg transition-all"
+                      >
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          aria-hidden="true"
+                          role="img"
+                          width="14"
+                          height="14"
+                          viewBox="0 0 24 24"
+                          data-icon="lucide:github"
+                          data-width="14"
+                          style="stroke-width: 1.5"
+                          class="iconify iconify--lucide w-3.5 h-3.5 md:w-5 md:h-5"
+                        >
+                          <path
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5c.08-1.25-.27-2.48-1-3.5c.28-1.15.28-2.35 0-3.5c0 0-1 0-3 1.5c-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5c-.39.49-.68 1.05-.85 1.65c-.17.6-.22 1.23-.15 1.85v4m-4-2c.64 1.37 1.98 2 4 2"
+                          ></path>
                         </svg>
                       </a>
                     </div>
-                    <div class="bg-slate-100/80 p-1 rounded-lg backdrop-blur-sm border border-slate-200/50 hidden lg:flex">
-                      <button onclick="switchView('resume')" id="btn-resume" class="px-3 py-1 text-[10px] uppercase tracking-wider font-bold rounded-md bg-white shadow-sm text-slate-900 transition-all">
+                    <div
+                      class="bg-slate-100/80 p-1 rounded-lg backdrop-blur-sm border border-slate-200/50 hidden lg:flex"
+                    >
+                      <button
+                        onclick="switchView('resume')"
+                        id="btn-resume"
+                        class="px-3 py-1 text-[10px] uppercase tracking-wider font-bold rounded-md bg-white shadow-sm text-slate-900 transition-all"
+                      >
                         Resume
                       </button>
-                      <button onclick="switchView('timeline')" id="btn-timeline" class="px-3 py-1 text-[10px] uppercase tracking-wider font-bold rounded-md text-slate-500 hover:text-slate-900 transition-all">
+                      <button
+                        onclick="switchView('timeline')"
+                        id="btn-timeline"
+                        class="px-3 py-1 text-[10px] uppercase tracking-wider font-bold rounded-md text-slate-500 hover:text-slate-900 transition-all"
+                      >
                         Timeline
                       </button>
                     </div>
@@ -329,29 +842,50 @@ content: `
                 </div>
               </div>
             </header>
-            <div id="timeline-view" class="hidden relative pl-8 space-y-8 py-4 mr-2 ml-[15px]">
-              <div class="absolute left-0 top-0 bottom-0 w-0.5 bg-gradient-to-b from-slate-200 via-slate-200 to-white"></div>
+            <div
+              id="timeline-view"
+              class="hidden relative pl-8 space-y-8 py-4 mr-2 ml-[15px]"
+            >
+              <div
+                class="absolute left-0 top-0 bottom-0 w-0.5 bg-gradient-to-b from-slate-200 via-slate-200 to-white"
+              ></div>
               <!-- BAT -->
-              <div class="timeline-event relative group" data-lat="33.9292" data-lng="-117.4254" data-title="Riverside, CA">
-                <div class="absolute -left-12 top-0 w-8 h-8 rounded-full bg-white border border-slate-200 flex items-center justify-center text-slate-400 group-hover:text-blue-500 group-hover:border-blue-500 transition-colors z-10 shadow-sm">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-graduation-cap">
-                    <path d="M21.42 10.922a1 1 0 0 0-.019-1.838L12.83 5.18a2 2 0 0 0-1.66 0L2.6 9.08a1 1 0 0 0 0 1.832l8.57 3.908a2 2 0 0 0 1.66 0z"></path>
+              <div
+                class="timeline-event relative group"
+                data-lat="33.9292"
+                data-lng="-117.4254"
+                data-title="Riverside, CA"
+              >
+                <div
+                  class="absolute -left-12 w-8 h-8 rounded-full bg-white border border-slate-200 flex items-center justify-center text-slate-400 group-hover:text-blue-500 group-hover:border-blue-500 transition-colors z-10 shadow-sm top-1/2 -translate-y-1/2"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-graduation-cap"
+                  >
+                    <path
+                      d="M21.42 10.922a1 1 0 0 0-.019-1.838L12.83 5.18a2 2 0 0 0-1.66 0L2.6 9.08a1 1 0 0 0 0 1.832l8.57 3.908a2 2 0 0 0 1.66 0z"
+                    ></path>
                     <path d="M22 10v6"></path>
                     <path d="M6 12.5V16a6 3 0 0 0 12 0v-3.5"></path>
                   </svg>
                 </div>
 
-                <div class="p-4 rounded-lg hover:bg-slate-50 transition-all cursor-pointer relative">
-                  <span class="text-xs text-slate-400 whitespace-nowrap calc-duration absolute top-4 right-4" data-start="2002-08-01" data-end="2006-05-01">
-                    Loading...
-                  </span>
-                  <span class="block text-xs font-bold text-slate-400 mb-1">
-                    2002
-                  </span>
+                <div
+                  class="p-4 rounded-lg hover:bg-slate-50 transition-all cursor-pointer relative"
+                >
                   <div class="flex justify-between items-start">
                     <div>
                       <h3 class="text-sm font-medium text-slate-900">
-                        Theology | BAT
+                        Bachelor of Applied Theology | BAT
                       </h3>
                       <p class="text-xs text-slate-600">
                         California Baptist University
@@ -361,26 +895,43 @@ content: `
                 </div>
               </div>
               <!-- MPH -->
-              <div class="timeline-event relative group" data-lat="34.0511" data-lng="-117.2633" data-title="Loma Linda, CA" data-quotes="[{&quot;photo&quot;: &quot;media/donng.jpeg&quot;, &quot;name&quot;: &quot;Donn Gaede, DrPH, Professor&quot;, &quot;quote&quot;: &quot;He is bright, articulate and creative. He is also very honest and open and will give you a very honest assessment of what he is willing to take on.&quot;}, {&quot;photo&quot;: &quot;media/sarag.jpg&quot;, &quot;name&quot;: &quot;Dr Sara Graham, Classmate&quot;, &quot;quote&quot;: &quot;Cory is a visionary with shrewd business sense. His work is quality and his compassion for others is matched by few.&quot;}]">
-                <div class="absolute -left-12 top-0 w-8 h-8 rounded-full bg-white border border-slate-200 flex items-center justify-center text-slate-400 group-hover:text-blue-500 group-hover:border-blue-500 transition-colors z-10 shadow-sm">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-graduation-cap">
-                    <path d="M21.42 10.922a1 1 0 0 0-.019-1.838L12.83 5.18a2 2 0 0 0-1.66 0L2.6 9.08a1 1 0 0 0 0 1.832l8.57 3.908a2 2 0 0 0 1.66 0z"></path>
+              <div
+                class="timeline-event relative group"
+                data-lat="34.0511"
+                data-lng="-117.2633"
+                data-title="Loma Linda, CA"
+                data-quotes='[{"photo": "media/donng.jpeg", "name": "Donn Gaede, DrPH, Professor", "quote": "He is bright, articulate and creative. He is also very honest and open and will give you a very honest assessment of what he is willing to take on."}, {"photo": "media/sarag.jpg", "name": "Dr Sara Graham, Classmate", "quote": "Cory is a visionary with shrewd business sense. His work is quality and his compassion for others is matched by few."}]'
+              >
+                <div
+                  class="absolute -left-12 w-8 h-8 rounded-full bg-white border border-slate-200 flex items-center justify-center text-slate-400 group-hover:text-blue-500 group-hover:border-blue-500 transition-colors z-10 shadow-sm top-1/2 -translate-y-1/2"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-graduation-cap"
+                  >
+                    <path
+                      d="M21.42 10.922a1 1 0 0 0-.019-1.838L12.83 5.18a2 2 0 0 0-1.66 0L2.6 9.08a1 1 0 0 0 0 1.832l8.57 3.908a2 2 0 0 0 1.66 0z"
+                    ></path>
                     <path d="M22 10v6"></path>
                     <path d="M6 12.5V16a6 3 0 0 0 12 0v-3.5"></path>
                   </svg>
                 </div>
 
-                <div class="p-4 rounded-lg hover:bg-slate-50 transition-all cursor-pointer relative">
-                  <span class="text-xs text-slate-400 whitespace-nowrap calc-duration absolute top-4 right-4" data-start="2006-08-01" data-end="2008-06-01">
-                    Loading...
-                  </span>
-                  <span class="block text-xs font-bold text-slate-400 mb-1">
-                    2006
-                  </span>
+                <div
+                  class="p-4 rounded-lg hover:bg-slate-50 transition-all cursor-pointer relative"
+                >
                   <div class="flex justify-between items-start">
                     <div>
                       <h3 class="text-sm font-medium text-slate-900">
-                        Global Health | MPH
+                        Masters of Global Health | MPH
                       </h3>
                       <p class="text-xs text-slate-600">
                         Loma Linda University
@@ -390,15 +941,38 @@ content: `
                 </div>
               </div>
               <!-- Apple -->
-              <div class="timeline-event relative group" data-lat="34.2011" data-lng="-118.6015" data-title="Canoga Park, CA" data-quotes="[{&quot;photo&quot;: &quot;media/rong.jpeg&quot;, &quot;name&quot;: &quot;Ron Green, Peer&quot;, &quot;quote&quot;: &quot;Cory is possibly the most intelligent, innovative, and motivated person I have ever worked with.&quot;}]">
-                <div class="absolute -left-12 top-0 w-8 h-8 rounded-full bg-white border border-slate-200 flex items-center justify-center text-slate-400 group-hover:text-blue-500 group-hover:border-blue-500 transition-colors z-10 shadow-sm">
-                  <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor">
-                    <path d="M12.152 6.896c-.948 0-2.415-1.078-3.96-1.04-2.04.027-3.91 1.183-4.961 3.014-2.117 3.675-.546 9.103 1.519 12.09 1.013 1.454 2.208 3.09 3.792 3.039 1.52-.065 2.09-.987 3.935-.987 1.831 0 2.35.987 3.96.948 1.637-.026 2.676-1.48 3.676-2.948 1.156-1.688 1.636-3.325 1.662-3.415-.039-.013-3.182-1.221-3.22-4.857-.026-3.04 2.48-4.494 2.597-4.559-1.429-2.09-3.623-2.324-4.39-2.376-2-.156-3.675 1.09-4.61 1.09zM15.53 3.83c.843-1.012 1.4-2.427 1.245-3.83-1.207.052-2.662.805-3.532 1.818-.78.896-1.454 2.338-1.273 3.714 1.338.104 2.715-.688 3.559-1.701z"></path>
+              <div
+                class="timeline-event relative group"
+                data-lat="34.2011"
+                data-lng="-118.6015"
+                data-title="Canoga Park, CA"
+                data-quotes='[{"photo": "media/rong.jpeg", "name": "Ron Green, Peer", "quote": "Cory is possibly the most intelligent, innovative, and motivated person I have ever worked with."}]'
+              >
+                <div
+                  class="absolute -left-12 w-8 h-8 rounded-full bg-white border border-slate-200 flex items-center justify-center text-slate-400 group-hover:text-blue-500 group-hover:border-blue-500 transition-colors z-10 shadow-sm top-1/2 -translate-y-1/2"
+                >
+                  <svg
+                    role="img"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                  >
+                    <path
+                      d="M12.152 6.896c-.948 0-2.415-1.078-3.96-1.04-2.04.027-3.91 1.183-4.961 3.014-2.117 3.675-.546 9.103 1.519 12.09 1.013 1.454 2.208 3.09 3.792 3.039 1.52-.065 2.09-.987 3.935-.987 1.831 0 2.35.987 3.96.948 1.637-.026 2.676-1.48 3.676-2.948 1.156-1.688 1.636-3.325 1.662-3.415-.039-.013-3.182-1.221-3.22-4.857-.026-3.04 2.48-4.494 2.597-4.559-1.429-2.09-3.623-2.324-4.39-2.376-2-.156-3.675 1.09-4.61 1.09zM15.53 3.83c.843-1.012 1.4-2.427 1.245-3.83-1.207.052-2.662.805-3.532 1.818-.78.896-1.454 2.338-1.273 3.714 1.338.104 2.715-.688 3.559-1.701z"
+                    ></path>
                   </svg>
                 </div>
 
-                <div class="p-4 rounded-lg hover:bg-slate-50 transition-all cursor-pointer relative">
-                  <span class="text-xs text-slate-400 whitespace-nowrap calc-duration absolute top-4 right-4" data-start="2008-08-01" data-end="2011-05-01">
+                <div
+                  class="p-4 rounded-lg hover:bg-slate-50 transition-all cursor-pointer relative"
+                >
+                  <span
+                    class="text-xs text-slate-400 whitespace-nowrap calc-duration absolute top-4 right-4"
+                    data-start="2008-08-01"
+                    data-end="2011-05-01"
+                  >
                     Loading...
                   </span>
                   <span class="block text-xs font-bold text-slate-400 mb-1">
@@ -415,9 +989,28 @@ content: `
                 </div>
               </div>
               <!-- FEMA -->
-              <div class="timeline-event relative group" data-lat="39.0997" data-lng="-94.5786" data-title="Kansas City, KS" data-quotes="[{&quot;photo&quot;: &quot;media/chrish.jpg&quot;, &quot;name&quot;: &quot;Chris Hartnett, Director&quot;, &quot;quote&quot;: &quot;His attention to detail and willingness to go above and beyond were second to none.&quot;}]">
-                <div class="absolute -left-12 top-0 w-8 h-8 rounded-full bg-white border border-slate-200 flex items-center justify-center text-slate-400 group-hover:text-blue-500 group-hover:border-blue-500 transition-colors z-10 shadow-sm">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-landmark">
+              <div
+                class="timeline-event relative group"
+                data-lat="39.0997"
+                data-lng="-94.5786"
+                data-title="Kansas City, KS"
+                data-quotes='[{"photo": "media/chrish.jpg", "name": "Chris Hartnett, Director", "quote": "His attention to detail and willingness to go above and beyond were second to none."}]'
+              >
+                <div
+                  class="absolute -left-12 w-8 h-8 rounded-full bg-white border border-slate-200 flex items-center justify-center text-slate-400 group-hover:text-blue-500 group-hover:border-blue-500 transition-colors z-10 shadow-sm top-1/2 -translate-y-1/2"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-landmark"
+                  >
                     <line x1="3" x2="21" y1="22" y2="22"></line>
                     <line x1="6" x2="6" y1="10" y2="15"></line>
                     <line x1="10" x2="10" y1="10" y2="15"></line>
@@ -427,8 +1020,14 @@ content: `
                   </svg>
                 </div>
 
-                <div class="p-4 rounded-lg hover:bg-slate-50 transition-all cursor-pointer relative">
-                  <span class="text-xs text-slate-400 whitespace-nowrap calc-duration absolute top-4 right-4" data-start="2010-06-01" data-end="2014-09-01">
+                <div
+                  class="p-4 rounded-lg hover:bg-slate-50 transition-all cursor-pointer relative"
+                >
+                  <span
+                    class="text-xs text-slate-400 whitespace-nowrap calc-duration absolute top-4 right-4"
+                    data-start="2010-06-01"
+                    data-end="2014-09-01"
+                  >
                     Loading...
                   </span>
                   <span class="block text-xs font-bold text-slate-400 mb-1">
@@ -444,30 +1043,47 @@ content: `
                       </p>
                     </div>
                   </div>
-                  <ul class="text-xs text-slate-500 leading-relaxed space-y-1 list-disc list-inside mt-2">
-                    <li>
-                      Developed advanced geospatial systems for disaster
-                      response
-                    </li>
-                    <li>
-                      Enhanced regional GIS and remote sensing capabilities
-                    </li>
-                    <li>Built strong partnerships with State GIS partners</li>
-                  </ul>
                 </div>
               </div>
               <!-- Fulcrum -->
-              <div class="timeline-event relative group" data-lat="27.7676" data-lng="-82.6403" data-title="St. Petersburg, FL" data-quotes="[{&quot;photo&quot;: &quot;media/path.jpeg&quot;, &quot;name&quot;: &quot;Pat Hustad, Peer&quot;, &quot;quote&quot;: &quot;Cory is one of the most talented and loyal colleagues I’ve ever had the chance to work with.&quot;}]">
-                <div class="absolute -left-12 top-0 w-8 h-8 rounded-full bg-white border border-slate-200 flex items-center justify-center text-slate-400 group-hover:text-blue-500 group-hover:border-blue-500 transition-colors z-10 shadow-sm">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-map">
-                    <polygon points="3 6 9 3 15 6 21 3 21 18 15 21 9 18 3 21"></polygon>
+              <div
+                class="timeline-event relative group"
+                data-lat="27.7676"
+                data-lng="-82.6403"
+                data-title="St. Petersburg, FL"
+                data-quotes='[{"photo": "media/path.jpeg", "name": "Pat Hustad, Peer", "quote": "Cory is one of the most talented and loyal colleagues I’ve ever had the chance to work with."}]'
+              >
+                <div
+                  class="absolute -left-12 w-8 h-8 rounded-full bg-white border border-slate-200 flex items-center justify-center text-slate-400 group-hover:text-blue-500 group-hover:border-blue-500 transition-colors z-10 shadow-sm top-1/2 -translate-y-1/2"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-map"
+                  >
+                    <polygon
+                      points="3 6 9 3 15 6 21 3 21 18 15 21 9 18 3 21"
+                    ></polygon>
                     <line x1="9" x2="9" y1="3" y2="18"></line>
                     <line x1="15" x2="15" y1="6" y2="21"></line>
                   </svg>
                 </div>
 
-                <div class="p-4 rounded-lg hover:bg-slate-50 transition-all cursor-pointer relative">
-                  <span class="text-xs text-slate-400 whitespace-nowrap calc-duration absolute top-4 right-4" data-start="2014-09-01" data-end="2025-01-01">
+                <div
+                  class="p-4 rounded-lg hover:bg-slate-50 transition-all cursor-pointer relative"
+                >
+                  <span
+                    class="text-xs text-slate-400 whitespace-nowrap calc-duration absolute top-4 right-4"
+                    data-start="2014-09-01"
+                    data-end="2025-01-01"
+                  >
                     Loading...
                   </span>
                   <span class="block text-xs font-bold text-slate-400 mb-1">
@@ -476,44 +1092,55 @@ content: `
                   <div class="flex justify-between items-start">
                     <div>
                       <h3 class="text-sm font-medium text-slate-900">
-                        Product Manager, Enterprise CSM &amp; SE
+                        Product Manager | Enterprise CSM &amp; SE
                       </h3>
                       <p class="text-xs text-slate-600">Fulcrum</p>
                     </div>
                   </div>
-                  <ul class="text-xs text-slate-500 leading-relaxed space-y-1 list-disc list-inside mt-2">
-                    <li class="">
-                      Helped scale Fulcrum from early-stage product to
-                      enterprise platform by translating customer problems into
-                      shipped features.
-                    </li>
-                    <li class="">
-                      Partnered directly with enterprise customers as a CSM and
-                      Sales Engineer, shaping product direction through
-                      real-world usage and feedback.
-                    </li>
-                    <li class="">
-                      Led discovery, prioritization, and delivery of enterprise
-                      capabilities balancing customer needs, revenue goals, and
-                      technical constraints.
-                    </li>
-                  </ul>
                 </div>
               </div>
               <!-- CompFox -->
-              <div class="timeline-event relative group" data-lat="37.7830" data-lng="-122.4041" data-title="San Francisco, CA">
-                <div class="absolute -left-12 top-0 w-8 h-8 rounded-full bg-white border border-slate-200 flex items-center justify-center text-slate-400 group-hover:text-blue-500 group-hover:border-blue-500 transition-colors z-10 shadow-sm">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-scale">
-                    <path d="m16 16 3-8 3 8c-.87.65-1.92 1-3 1s-2.13-.35-3-1Z"></path>
-                    <path d="m2 16 3-8 3 8c-.87.65-1.92 1-3 1s-2.13-.35-3-1Z"></path>
+              <div
+                class="timeline-event relative group"
+                data-lat="37.7830"
+                data-lng="-122.4041"
+                data-title="San Francisco, CA"
+              >
+                <div
+                  class="absolute -left-12 w-8 h-8 rounded-full bg-white border border-slate-200 flex items-center justify-center text-slate-400 group-hover:text-blue-500 group-hover:border-blue-500 transition-colors z-10 shadow-sm top-1/2 -translate-y-1/2"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-scale"
+                  >
+                    <path
+                      d="m16 16 3-8 3 8c-.87.65-1.92 1-3 1s-2.13-.35-3-1Z"
+                    ></path>
+                    <path
+                      d="m2 16 3-8 3 8c-.87.65-1.92 1-3 1s-2.13-.35-3-1Z"
+                    ></path>
                     <path d="M7 21h10"></path>
                     <path d="M12 3v18"></path>
                     <path d="M3 7h2c2 0 5-1 7-2 2 1 5 2 7 2h2"></path>
                   </svg>
                 </div>
 
-                <div class="p-4 rounded-lg hover:bg-slate-50 transition-all cursor-pointer relative">
-                  <span class="text-xs text-slate-400 whitespace-nowrap calc-duration absolute top-4 right-4" data-start="2024-10-01" data-end="Current">
+                <div
+                  class="p-4 rounded-lg hover:bg-slate-50 transition-all cursor-pointer relative"
+                >
+                  <span
+                    class="text-xs text-slate-400 whitespace-nowrap calc-duration absolute top-4 right-4"
+                    data-start="2024-10-01"
+                    data-end="Current"
+                  >
                     Loading...
                   </span>
                   <span class="block text-xs font-bold text-slate-400 mb-1">
@@ -527,34 +1154,46 @@ content: `
                       <p class="text-xs text-slate-600">CompFox</p>
                     </div>
                   </div>
-                  <ul class="text-xs text-slate-500 leading-relaxed space-y-1 list-disc list-inside mt-2">
-                    <li class="">
-                      Built and launched a product from zero to market, owning
-                      vision, UX, roadmap, and execution.
-                    </li>
-                    <li class="">
-                      Led a remote, async engineering team to deliver scalable,
-                      user-centered workflows.
-                    </li>
-                    <li class="">
-                      Shipped AI-powered features that reduce complexity and
-                      help users generate legal documents from their case files.
-                    </li>
-                  </ul>
                 </div>
               </div>
               <!-- Healthicity -->
-              <div class="timeline-event relative group" data-lat="40.7757" data-lng="-111.8883" data-title="Salt Lake City, UT">
-                <div class="absolute -left-12 top-0 w-8 h-8 rounded-full bg-white border border-slate-200 flex items-center justify-center text-slate-400 group-hover:text-blue-500 group-hover:border-blue-500 transition-colors z-10 shadow-sm">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-stethoscope">
-                    <path d="M4.8 2.3A.3.3 0 1 0 5 2H4a2 2 0 0 0-2 2v5a6 6 0 0 0 6 6v0a6 6 0 0 0 6-6V4a2 2 0 0 0-2-2h-1a.2.2 0 1 0 .3.3"></path>
+              <div
+                class="timeline-event relative group"
+                data-lat="40.7757"
+                data-lng="-111.8883"
+                data-title="Salt Lake City, UT"
+              >
+                <div
+                  class="absolute -left-12 w-8 h-8 rounded-full bg-white border border-slate-200 flex items-center justify-center text-slate-400 group-hover:text-blue-500 group-hover:border-blue-500 transition-colors z-10 shadow-sm top-1/2 -translate-y-1/2"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-stethoscope"
+                  >
+                    <path
+                      d="M4.8 2.3A.3.3 0 1 0 5 2H4a2 2 0 0 0-2 2v5a6 6 0 0 0 6 6v0a6 6 0 0 0 6-6V4a2 2 0 0 0-2-2h-1a.2.2 0 1 0 .3.3"
+                    ></path>
                     <path d="M8 15v1a6 6 0 0 0 6 6v0a6 6 0 0 0 6-6v-4"></path>
                     <circle cx="20" cy="10" r="2"></circle>
                   </svg>
                 </div>
 
-                <div class="p-4 rounded-lg hover:bg-slate-50 transition-all cursor-pointer relative">
-                  <span class="text-xs text-slate-400 whitespace-nowrap calc-duration absolute top-4 right-4" data-start="2025-04-01" data-end="Current">
+                <div
+                  class="p-4 rounded-lg hover:bg-slate-50 transition-all cursor-pointer relative"
+                >
+                  <span
+                    class="text-xs text-slate-400 whitespace-nowrap calc-duration absolute top-4 right-4"
+                    data-start="2025-04-01"
+                    data-end="Current"
+                  >
                     Loading...
                   </span>
                   <span class="block text-xs font-bold text-slate-400 mb-1">
@@ -568,49 +1207,35 @@ content: `
                       <p class="text-xs text-slate-600">Healthicity</p>
                     </div>
                   </div>
-                  <ul class="text-xs text-slate-500 leading-relaxed space-y-1 list-disc list-inside mt-2">
-                    <li class="">
-                      Own product strategy and roadmaps for a core SaaS
-                      platform, balancing user needs, business outcomes, and
-                      technical constraints.
-                    </li>
-                    <li class="">
-                      Partner cross-functionally to ship iterative improvements
-                      that increase adoption, retention, and customer trust.
-                    </li>
-                    <li class="">
-                      Use customer research, product data, and market insight to
-                      drive prioritization and measure success.
-                    </li>
-                    <li class="">
-                      Communicate clearly with executives and stakeholders in a
-                      fully distributed environment.
-                    </li>
-                  </ul>
                 </div>
               </div>
             </div>
 
             <!-- Summary Section -->
             <section class="mb-6">
-              <h2 class="text-xs font-semibold text-slate-400 uppercase tracking-wider mb-3">
+              <h2
+                class="text-xs font-semibold text-slate-400 uppercase tracking-wider mb-3"
+              >
                 Summary
               </h2>
               <p class="leading-relaxed text-xs text-slate-600">
-                Strategic product leader and agentic engineer with extensive experience guiding
-                successful SaaS products from concept to market. Skilled in
-                translating complex user needs into intuitive, high-ROI
-                solutions that drive adoption and retention. Adept at leading
-                cross-functional teams through product lifecycles while
-                balancing technical constraints, business goals, and customer
-                needs.
+                A product leader with fifteen-plus years building and operating
+                enterprise SaaS products. Experienced owning the entire product
+                strategy from OKR alignment through roadmap execution, sprint
+                delivery, and release. I’m comfortable with ambiguity at the
+                executive level and equally comfortable during backlog grooming
+                sessions. Have built and led product teams, shipped meaningful
+                AI features, and spent years embedded with enterprise customers
+                across healthcare, infrastructure, and government verticals.
               </p>
             </section>
 
             <!-- Experience Section -->
             <section class="mb-6">
               <div class="flex items-center justify-between mb-3">
-                <h2 class="text-xs font-semibold text-slate-400 uppercase tracking-wider">
+                <h2
+                  class="text-xs font-semibold text-slate-400 uppercase tracking-wider"
+                >
                   Experience
                 </h2>
                 <!-- Thumbnails Toggle -->
@@ -618,7 +1243,14 @@ content: `
 
               <div class="space-y-4">
                 <!-- Healthicity -->
-                <div class="resume-event cursor-pointer p-2.5 -mx-2.5 rounded-lg transition-all hover:bg-slate-50" data-lat="40.7757" data-lng="-111.8883" data-title="Salt Lake City, UT" data-hide-quote="true" data-quotes="[]">
+                <div
+                  class="resume-event cursor-pointer p-2.5 -mx-2.5 rounded-lg transition-all hover:bg-slate-50"
+                  data-lat="40.7757"
+                  data-lng="-111.8883"
+                  data-title="Salt Lake City, UT"
+                  data-hide-quote="true"
+                  data-quotes="[]"
+                >
                   <div class="flex justify-between items-start mb-1">
                     <h3 class="text-sm font-medium text-slate-900">
                       Senior Director of Product - Compliance
@@ -628,33 +1260,68 @@ content: `
                     </span>
                   </div>
                   <p class="text-sm text-slate-600 mb-1.5">
-                    <a href="http://www.healthicity.com" class="hover:text-blue-600 transition-colors">
+                    <a
+                      href="http://www.healthicity.com"
+                      class="hover:text-blue-600 transition-colors"
+                    >
                       Healthicity
                     </a>
                   </p>
-                  <ul class="text-xs text-slate-500 leading-relaxed space-y-1 list-disc list-inside">
+                  <ul
+                    class="text-xs text-slate-500 leading-relaxed space-y-1 list-disc list-inside"
+                  >
                     <li class="">
-                      Own product strategy and roadmaps for a core SaaS
-                      platform, balancing user needs, business outcomes, and
-                      technical constraints.
+                      Own product strategy and roadmap for a multi-tenant
+                      healthcare compliance SaaS platform; balance enterprise
+                      customer needs, business outcomes, and technical
+                      constraints
                     </li>
                     <li class="">
-                      Partner cross-functionally to ship iterative improvements
-                      that increase adoption, retention, and customer trust.
+                      Define OKRs and measurable release goals with Engineering
+                      and UX; manage a prioritized backlog using WSJF and RICE
+                      Method
                     </li>
                     <li class="">
-                      Use customer research, product data, and market insight to
-                      drive prioritization and measure success.
+                      Lead sprint planning, reviews, and retrospectives;
+                      coordinate cross-team dependencies and represent the
+                      product in executive forums
                     </li>
                     <li class="">
-                      Communicate clearly with executives and stakeholders in a
-                      fully distributed environment.
+                      Use customer research, product analytics, and market
+                      insights to drive prioritization and validate product
+                      hypotheses
+                    </li>
+                    <li class="">
+                      Communicate product strategy, roadmap tradeoffs, and
+                      release decisions to senior leadership in a fully
+                      distributed environment
                     </li>
                   </ul>
-                  <div class="flex items-center gap-1 mt-1.5 text-xs text-blue-600">
-                    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" width="12" height="12" viewBox="0 0 24 24" data-icon="lucide:map-pin" data-width="12" style="stroke-width: 1.5" class="iconify iconify--lucide">
-                      <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
-                        <path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"></path>
+                  <div
+                    class="flex items-center gap-1 mt-1.5 text-xs text-blue-600"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      aria-hidden="true"
+                      role="img"
+                      width="12"
+                      height="12"
+                      viewBox="0 0 24 24"
+                      data-icon="lucide:map-pin"
+                      data-width="12"
+                      style="stroke-width: 1.5"
+                      class="iconify iconify--lucide"
+                    >
+                      <g
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                      >
+                        <path
+                          d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"
+                        ></path>
                         <circle cx="12" cy="10" r="3"></circle>
                       </g>
                     </svg>
@@ -663,7 +1330,14 @@ content: `
                 </div>
 
                 <!-- CompFox -->
-                <div class="resume-event cursor-pointer p-2.5 -mx-2.5 rounded-lg transition-all hover:bg-slate-50" data-lat="37.7830" data-lng="-122.4041" data-title="San Francisco, CA" data-hide-quote="true" data-quotes="[]">
+                <div
+                  class="resume-event cursor-pointer p-2.5 -mx-2.5 rounded-lg transition-all hover:bg-slate-50"
+                  data-lat="37.7830"
+                  data-lng="-122.4041"
+                  data-title="San Francisco, CA"
+                  data-hide-quote="true"
+                  data-quotes="[]"
+                >
                   <div class="flex justify-between items-start mb-1">
                     <h3 class="text-sm font-medium text-slate-900">
                       Head of Product
@@ -673,42 +1347,99 @@ content: `
                     </span>
                   </div>
                   <p class="text-sm text-slate-600 mb-1.5">
-                    <a href="http://www.compfox.io" class="hover:text-blue-600 transition-colors">
+                    <a
+                      href="http://www.compfox.io"
+                      class="hover:text-blue-600 transition-colors"
+                    >
                       CompFox
                     </a>
                   </p>
-                  <ul class="text-xs text-slate-500 leading-relaxed space-y-1 list-disc list-inside">
+                  <ul
+                    class="text-xs text-slate-500 leading-relaxed space-y-1 list-disc list-inside"
+                  >
                     <li class="">
-                      Built and launched a product from zero to market, owning
-                      vision, UX, roadmap, and execution.
+                      Built and launched an AI-powered legal research product
+                      from 0 to market; owned vision, personas, UX strategy,
+                      roadmap, and delivery
                     </li>
                     <li class="">
-                      Led a remote, async engineering team to deliver scalable,
-                      user-centered workflows.
+                      Defined MVP scope and iterative roadmap; shipped AI
+                      features to simplify complex documents and generate case
+                      summaries from source files
                     </li>
                     <li class="">
-                      Shipped AI-powered features that reduce complexity and
-                      help users generate legal documents from their case files.
+                      Led a remote, async engineering team; established clear
+                      definitions of done, quality standards, and continuous
+                      feedback loops
+                    </li>
+                    <li class="">
+                      Developed onboarding materials and internal documentation
+                      to drive adoption and build trust in AI-generated outputs
                     </li>
                   </ul>
-                  <div class="flex items-center gap-1 mt-1.5 text-xs text-blue-600">
-                    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" width="12" height="12" viewBox="0 0 24 24" data-icon="lucide:map-pin" data-width="12" style="stroke-width: 1.5" class="iconify iconify--lucide">
-                      <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
-                        <path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"></path>
+                  <div
+                    class="flex items-center gap-1 mt-1.5 text-xs text-blue-600"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      aria-hidden="true"
+                      role="img"
+                      width="12"
+                      height="12"
+                      viewBox="0 0 24 24"
+                      data-icon="lucide:map-pin"
+                      data-width="12"
+                      style="stroke-width: 1.5"
+                      class="iconify iconify--lucide"
+                    >
+                      <g
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                      >
+                        <path
+                          d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"
+                        ></path>
                         <circle cx="12" cy="10" r="3"></circle>
                       </g>
                     </svg>
                     San Francisco, CA
                   </div>
                   <div class="work-thumbnails flex gap-2">
-                    <button class="work-thumbnail w-12 h-12 rounded-lg overflow-hidden border-2 border-slate-200 hover:border-blue-400 transition-colors" data-image="media/portfolio/CompFox_Home_3.jpg?w=800&h=600&fit=crop" data-caption="17,000 workers' compensation decisions now available and searchable, including case summaries, citations, and legal analysis">
-                      <img src="media/portfolio/CompFox_Home_3.jpg?w=50&h=50&fit=crop" alt="screenshot of the CompFox search interface" class="w-full h-full object-cover">
+                    <button
+                      class="work-thumbnail w-12 h-12 rounded-lg overflow-hidden border-2 border-slate-200 hover:border-blue-400 transition-colors"
+                      data-image="media/portfolio/CompFox_Home_3.jpg?w=800&amp;h=600&amp;fit=crop"
+                      data-caption="17,000 workers' compensation decisions now available and searchable, including case summaries, citations, and legal analysis"
+                    >
+                      <img
+                        src="media/portfolio/CompFox_Home_3.jpg?w=50&amp;h=50&amp;fit=crop"
+                        alt="screenshot of the CompFox search interface"
+                        class="w-full h-full object-cover"
+                      />
                     </button>
-                    <button class="work-thumbnail w-12 h-12 rounded-lg overflow-hidden border-2 border-slate-200 hover:border-blue-400 transition-colors" data-image="media/portfolio/CompFox_Home_2.jpg?w=800&h=600&fit=crop" data-caption="CompFox generates settlement letters, trial briefs, petitions, and case summaries using specific facts pulled directly from your uploaded documents.">
-                      <img src="media/portfolio/CompFox_Home_2.jpg?w=50&h=50&fit=crop" alt="screenshot of document generation workflow" class="w-full h-full object-cover">
+                    <button
+                      class="work-thumbnail w-12 h-12 rounded-lg overflow-hidden border-2 border-slate-200 hover:border-blue-400 transition-colors"
+                      data-image="media/portfolio/CompFox_Home_2.jpg?w=800&amp;h=600&amp;fit=crop"
+                      data-caption="CompFox generates settlement letters, trial briefs, petitions, and case summaries using specific facts pulled directly from your uploaded documents."
+                    >
+                      <img
+                        src="media/portfolio/CompFox_Home_2.jpg?w=50&amp;h=50&amp;fit=crop"
+                        alt="screenshot of document generation workflow"
+                        class="w-full h-full object-cover"
+                      />
                     </button>
-                    <button class="work-thumbnail w-12 h-12 rounded-lg overflow-hidden border-2 border-slate-200 hover:border-blue-400 transition-colors" data-image="media/portfolio/CompFox_Home_1.jpg?w=800&h=600&fit=crop" data-caption="17,000 workers' compensation decisions now available and searchable, including case summaries, citations, and legal analysis">
-                      <img src="media/portfolio/CompFox_Home_1.jpg?w=50&h=50&fit=crop" alt="screenshot of the CompFox search interface" class="w-full h-full object-cover">
+                    <button
+                      class="work-thumbnail w-12 h-12 rounded-lg overflow-hidden border-2 border-slate-200 hover:border-blue-400 transition-colors"
+                      data-image="media/portfolio/CompFox_Home_1.jpg?w=800&amp;h=600&amp;fit=crop"
+                      data-caption="17,000 workers' compensation decisions now available and searchable, including case summaries, citations, and legal analysis"
+                    >
+                      <img
+                        src="media/portfolio/CompFox_Home_1.jpg?w=50&amp;h=50&amp;fit=crop"
+                        alt="screenshot of the CompFox search interface"
+                        class="w-full h-full object-cover"
+                      />
                     </button>
                   </div>
                 </div>
@@ -900,78 +1631,169 @@ content: `
           </div> -->
 
                 <!-- Fulcrum - PM -->
-                <div class="resume-event cursor-pointer p-2.5 -mx-2.5 rounded-lg transition-all hover:bg-slate-50" data-lat="27.7676" data-lng="-82.6403" data-title="St. Petersburg, FL" data-quotes="[
-            {&quot;photo&quot;: &quot;media/path.jpeg&quot;, &quot;name&quot;: &quot;Pat Hustad, Peer&quot;, &quot;quote&quot;: &quot;Cory is one of the most talented and loyal colleagues I’ve ever had the chance to work with. His energy and dedication to the team are contagious, and he always finds a way to bring people together to accomplish big goals. When it comes to product, I’ve never met anyone who can drive growth as fast as he can—he doesn’t just build, he transforms companies.&quot;},
-            {&quot;photo&quot;: &quot;media/chrisb.jpeg&quot;, &quot;name&quot;: &quot;Chris Brown, Manager&quot;, &quot;quote&quot;: &quot;CSM doesn’t quite do him justice, as he was quite literally the go-to person for any and all things customer-related. You wanted someone to connect the dots between value and how to execute in the software...Cory was your guy.&quot;},
-            {&quot;photo&quot;: &quot;media/richard.jpeg&quot;, &quot;name&quot;: &quot;Richards Jacques, Peer&quot;, &quot;quote&quot;: &quot;I was highly impressed with his productivity, positive attitude, and endless curiosity. Cory genuinely cares about the work he does.&quot;}
-          ]">
+                <div
+                  class="resume-event cursor-pointer p-2.5 -mx-2.5 rounded-lg transition-all hover:bg-slate-50"
+                  data-lat="27.7676"
+                  data-lng="-82.6403"
+                  data-title="St. Petersburg, FL"
+                  data-quotes='[
+            {"photo": "media/path.jpeg", "name": "Pat Hustad, Peer", "quote": "Cory is one of the most talented and loyal colleagues I’ve ever had the chance to work with. His energy and dedication to the team are contagious, and he always finds a way to bring people together to accomplish big goals. When it comes to product, I’ve never met anyone who can drive growth as fast as he can—he doesn’t just build, he transforms companies."},
+            {"photo": "media/chrisb.jpeg", "name": "Chris Brown, Manager", "quote": "CSM doesn’t quite do him justice, as he was quite literally the go-to person for any and all things customer-related. You wanted someone to connect the dots between value and how to execute in the software...Cory was your guy."},
+            {"photo": "media/richard.jpeg", "name": "Richards Jacques, Peer", "quote": "I was highly impressed with his productivity, positive attitude, and endless curiosity. Cory genuinely cares about the work he does."}
+          ]'
+                >
                   <div class="flex justify-between items-start mb-1">
                     <h3 class="text-sm font-medium text-slate-900">
-                      Product Manager, Enterprise CSM &amp; SE
+                      Product Manager | Enterprise CSM &amp; SE
                     </h3>
                     <span class="text-xs text-slate-400 whitespace-nowrap ml-3">
                       09/2014 - 01/2025
                     </span>
                   </div>
                   <p class="text-sm text-slate-600 mb-1.5">
-                    <a href="http://www.fulcrumapp.com" class="hover:text-blue-600 transition-colors">
+                    <a
+                      href="http://www.fulcrumapp.com"
+                      class="hover:text-blue-600 transition-colors"
+                    >
                       Fulcrum
                     </a>
                   </p>
-                  <ul class="text-xs text-slate-500 leading-relaxed space-y-1 list-disc list-inside">
+                  <ul
+                    class="text-xs text-slate-500 leading-relaxed space-y-1 list-disc list-inside"
+                  >
                     <li class="">
-                      Helped scale Fulcrum from early-stage product to
-                      enterprise platform by translating customer problems into
-                      shipped features.
+                      Helped scale Fulcrum from an early-stage product to a full
+                      enterprise platform serving field operations teams across
+                      infrastructure, utilities, and government
                     </li>
                     <li class="">
-                      Partnered directly with enterprise customers as a CSM and
-                      Sales Engineer, shaping product direction through
-                      real-world usage and feedback.
+                      Partnered with enterprise customers as a Customer Success
+                      Manager and Sales Engineer; translated real-world usage
+                      and failure modes into prioritized product improvements
                     </li>
                     <li class="">
-                      Led discovery, prioritization, and delivery of enterprise
-                      capabilities balancing customer needs, revenue goals, and
-                      technical constraints.
+                      Led discovery, backlog definition, and delivery of
+                      enterprise features including offline sync, permissions,
+                      API extensibility, and mobile data collection workflows
+                    </li>
+                    <li class="">
+                      Drove product direction through direct customer feedback
+                      loops; contributed to improvements in retention and
+                      expansion ARR
                     </li>
                   </ul>
-                  <div class="flex items-center gap-1 mt-1.5 text-xs text-blue-600">
-                    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" width="12" height="12" viewBox="0 0 24 24" data-icon="lucide:map-pin" data-width="12" style="stroke-width: 1.5" class="iconify iconify--lucide">
-                      <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
-                        <path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"></path>
+                  <div
+                    class="flex items-center gap-1 mt-1.5 text-xs text-blue-600"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      aria-hidden="true"
+                      role="img"
+                      width="12"
+                      height="12"
+                      viewBox="0 0 24 24"
+                      data-icon="lucide:map-pin"
+                      data-width="12"
+                      style="stroke-width: 1.5"
+                      class="iconify iconify--lucide"
+                    >
+                      <g
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                      >
+                        <path
+                          d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"
+                        ></path>
                         <circle cx="12" cy="10" r="3"></circle>
                       </g>
                     </svg>
                     St Petersburg, FL
                   </div>
                   <div class="work-thumbnails flex gap-2">
-                    <button class="work-thumbnail w-12 h-12 rounded-lg overflow-hidden border-2 border-slate-200 hover:border-blue-400 transition-colors" data-image="media/portfolio/mobile-apps.PNG?w=800&h=600&fit=crop" data-caption="Early mobile app">
-                      <img src="media/portfolio/mobile-apps.PNG?w=50&h=50&fit=crop" alt="Early mobile app" class="w-full h-full object-cover">
+                    <button
+                      class="work-thumbnail w-12 h-12 rounded-lg overflow-hidden border-2 border-slate-200 hover:border-blue-400 transition-colors"
+                      data-image="media/portfolio/mobile-apps.PNG?w=800&amp;h=600&amp;fit=crop"
+                      data-caption="Early mobile app"
+                    >
+                      <img
+                        src="media/portfolio/mobile-apps.PNG?w=50&amp;h=50&amp;fit=crop"
+                        alt="Early mobile app"
+                        class="w-full h-full object-cover"
+                      />
                     </button>
-                    <button class="work-thumbnail w-12 h-12 rounded-lg overflow-hidden border-2 border-slate-200 hover:border-blue-400 transition-colors" data-image="media/portfolio/mobile-createrecord.PNG?w=800&h=600&fit=crop" data-caption="Early mobile app">
-                      <img src="media/portfolio/mobile-createrecord.PNG?w=50&h=50&fit=crop" alt="Early mobile app" class="w-full h-full object-cover">
+                    <button
+                      class="work-thumbnail w-12 h-12 rounded-lg overflow-hidden border-2 border-slate-200 hover:border-blue-400 transition-colors"
+                      data-image="media/portfolio/mobile-createrecord.PNG?w=800&amp;h=600&amp;fit=crop"
+                      data-caption="Early mobile app"
+                    >
+                      <img
+                        src="media/portfolio/mobile-createrecord.PNG?w=50&amp;h=50&amp;fit=crop"
+                        alt="Early mobile app"
+                        class="w-full h-full object-cover"
+                      />
                     </button>
-                    <button class="work-thumbnail w-12 h-12 rounded-lg overflow-hidden border-2 border-slate-200 hover:border-blue-400 transition-colors" data-image="media/portfolio/mobile-listview.PNG?w=800&h=600&fit=crop" data-caption="Early mobile app">
-                      <img src="media/portfolio/mobile-listview.PNG?w=50&h=50&fit=crop" alt="Early mobile app" class="w-full h-full object-cover">
+                    <button
+                      class="work-thumbnail w-12 h-12 rounded-lg overflow-hidden border-2 border-slate-200 hover:border-blue-400 transition-colors"
+                      data-image="media/portfolio/mobile-listview.PNG?w=800&amp;h=600&amp;fit=crop"
+                      data-caption="Early mobile app"
+                    >
+                      <img
+                        src="media/portfolio/mobile-listview.PNG?w=50&amp;h=50&amp;fit=crop"
+                        alt="Early mobile app"
+                        class="w-full h-full object-cover"
+                      />
                     </button>
-                    <button class="work-thumbnail w-12 h-12 rounded-lg overflow-hidden border-2 border-slate-200 hover:border-blue-400 transition-colors" data-image="media/portfolio/mobile-mapview.PNG?w=800&h=600&fit=crop" data-caption="Early mobile app">
-                      <img src="media/portfolio/mobile-mapview.PNG?w=50&h=50&fit=crop" alt="Early mobile app" class="w-full h-full object-cover">
+                    <button
+                      class="work-thumbnail w-12 h-12 rounded-lg overflow-hidden border-2 border-slate-200 hover:border-blue-400 transition-colors"
+                      data-image="media/portfolio/mobile-mapview.PNG?w=800&amp;h=600&amp;fit=crop"
+                      data-caption="Early mobile app"
+                    >
+                      <img
+                        src="media/portfolio/mobile-mapview.PNG?w=50&amp;h=50&amp;fit=crop"
+                        alt="Early mobile app"
+                        class="w-full h-full object-cover"
+                      />
                     </button>
-                    <button class="work-thumbnail w-12 h-12 rounded-lg overflow-hidden border-2 border-slate-200 hover:border-blue-400 transition-colors" data-image="media/portfolio/web-appbuilder.jpg?w=800&h=600&fit=crop" data-caption="Early web app builder">
-                      <img src="media/portfolio/web-appbuilder.jpg?w=50&h=50&fit=crop" alt="Early web app builder" class="w-full h-full object-cover">
+                    <button
+                      class="work-thumbnail w-12 h-12 rounded-lg overflow-hidden border-2 border-slate-200 hover:border-blue-400 transition-colors"
+                      data-image="media/portfolio/web-appbuilder.jpg?w=800&amp;h=600&amp;fit=crop"
+                      data-caption="Early web app builder"
+                    >
+                      <img
+                        src="media/portfolio/web-appbuilder.jpg?w=50&amp;h=50&amp;fit=crop"
+                        alt="Early web app builder"
+                        class="w-full h-full object-cover"
+                      />
                     </button>
-                    <button class="work-thumbnail w-12 h-12 rounded-lg overflow-hidden border-2 border-slate-200 hover:border-blue-400 transition-colors" data-image="media/portfolio/web-recordeditor.jpg?w=800&h=600&fit=crop" data-caption="Early split view">
-                      <img src="media/portfolio/web-recordeditor.jpg?w=50&h=50&fit=crop" alt="Early split view" class="w-full h-full object-cover">
+                    <button
+                      class="work-thumbnail w-12 h-12 rounded-lg overflow-hidden border-2 border-slate-200 hover:border-blue-400 transition-colors"
+                      data-image="media/portfolio/web-recordeditor.jpg?w=800&amp;h=600&amp;fit=crop"
+                      data-caption="Early split view"
+                    >
+                      <img
+                        src="media/portfolio/web-recordeditor.jpg?w=50&amp;h=50&amp;fit=crop"
+                        alt="Early split view"
+                        class="w-full h-full object-cover"
+                      />
                     </button>
                   </div>
                 </div>
 
                 <!-- FEMA -->
-                <div class="resume-event cursor-pointer p-2.5 -mx-2.5 rounded-lg transition-all hover:bg-slate-50" data-lat="39.0997" data-lng="-94.5786" data-title="Kansas City, KS" data-quotes="[
-            {&quot;photo&quot;: &quot;media/chrish.jpg&quot;, &quot;name&quot;: &quot;Chris Hartnett, Director&quot;, &quot;quote&quot;: &quot;His attention to detail and willingness to go above and beyond were second to none. His talent facilitated the development of many viable products still in use today.&quot;},
-            {&quot;photo&quot;: &quot;media/khaalis.jpg&quot;, &quot;name&quot;: &quot;Khaalis Jackson, Manager&quot;, &quot;quote&quot;: &quot;Cory’s ability to communicate verbally and in writing proved to be valuable when presenting his ideas and discussing the outcomes of his project development.&quot;},
-            {&quot;photo&quot;: &quot;media/jonathan.jpg&quot;, &quot;name&quot;: &quot;Jonathan Colwell, Manager&quot;, &quot;quote&quot;: &quot;He is a quick and competent learner who finds ways to implement new technologies and to create a better common operating picture.&quot;}
-          ]">
+                <div
+                  class="resume-event cursor-pointer p-2.5 -mx-2.5 rounded-lg transition-all hover:bg-slate-50"
+                  data-lat="39.0997"
+                  data-lng="-94.5786"
+                  data-title="Kansas City, KS"
+                  data-quotes='[
+            {"photo": "media/chrish.jpg", "name": "Chris Hartnett, Director", "quote": "His attention to detail and willingness to go above and beyond were second to none. His talent facilitated the development of many viable products still in use today."},
+            {"photo": "media/khaalis.jpg", "name": "Khaalis Jackson, Manager", "quote": "Cory’s ability to communicate verbally and in writing proved to be valuable when presenting his ideas and discussing the outcomes of his project development."},
+            {"photo": "media/jonathan.jpg", "name": "Jonathan Colwell, Manager", "quote": "He is a quick and competent learner who finds ways to implement new technologies and to create a better common operating picture."}
+          ]'
+                >
                   <div class="flex justify-between items-start mb-1">
                     <h3 class="text-sm font-medium text-slate-900">
                       Regional Geospatial Coordinator
@@ -981,49 +1803,127 @@ content: `
                     </span>
                   </div>
                   <p class="text-sm text-slate-600 mb-1.5">
-                    <a href="http://www.fema.gov" class="hover:text-blue-600 transition-colors">
+                    <a
+                      href="http://www.fema.gov"
+                      class="hover:text-blue-600 transition-colors"
+                    >
                       FEMA - Region 7 &amp; 9
                     </a>
                   </p>
-                  <ul class="text-xs text-slate-500 leading-relaxed space-y-1 list-disc list-inside">
-                    <li>
-                      Developed advanced geospatial systems for disaster
-                      response
+                  <ul
+                    class="text-xs text-slate-500 leading-relaxed space-y-1 list-disc list-inside"
+                  >
+                    <li class="">
+                      Led development and deployment of geospatial platforms
+                      supporting active disaster response across federal and
+                      state partners
                     </li>
-                    <li>
-                      Enhanced regional GIS and remote sensing capabilities
+                    <li class="">
+                      Gathered requirements, coordinated delivery across
+                      multiple stakeholders, and maintained GIS and remote
+                      sensing systems under high-pressure, high-reliability
+                      conditions
                     </li>
-                    <li>Built strong partnerships with State GIS partners</li>
+                    <li class="">
+                      Built and maintained relationships with State GIS
+                      coordinators across Region 7 (Midwest) and Region 9
+                      (Pacific Southwest)
+                    </li>
+                    <li class="">
+                      Delivered within a large government environment,
+                      navigating complex stakeholders, security constraints, and
+                      detailed requirements
+                    </li>
                   </ul>
-                  <div class="flex items-center gap-1 mt-1.5 text-xs text-blue-600">
-                    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" width="12" height="12" viewBox="0 0 24 24" data-icon="lucide:map-pin" data-width="12" style="stroke-width: 1.5" class="iconify iconify--lucide">
-                      <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
-                        <path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"></path>
+                  <div
+                    class="flex items-center gap-1 mt-1.5 text-xs text-blue-600"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      aria-hidden="true"
+                      role="img"
+                      width="12"
+                      height="12"
+                      viewBox="0 0 24 24"
+                      data-icon="lucide:map-pin"
+                      data-width="12"
+                      style="stroke-width: 1.5"
+                      class="iconify iconify--lucide"
+                    >
+                      <g
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                      >
+                        <path
+                          d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"
+                        ></path>
                         <circle cx="12" cy="10" r="3"></circle>
                       </g>
                     </svg>
                     Kansas City, KS
                   </div>
                   <div class="work-thumbnails flex gap-2">
-                    <button class="work-thumbnail w-12 h-12 rounded-lg overflow-hidden border-2 border-slate-200 hover:border-blue-400 transition-colors" data-image="media/portfolio/geoq.jpg?w=800&h=600&fit=crop" data-caption="An open source platform we built to distribute the damage assessment with the help of volunteers. ALlowing a distributed workfoce to assess damage to homes rapidly.">
-                      <img src="media/portfolio/geoq.jpg?w=50&h=50&fit=crop" alt="Screenshots of GeoQ." class="w-full h-full object-cover">
+                    <button
+                      class="work-thumbnail w-12 h-12 rounded-lg overflow-hidden border-2 border-slate-200 hover:border-blue-400 transition-colors"
+                      data-image="media/portfolio/geoq.jpg?w=800&amp;h=600&amp;fit=crop"
+                      data-caption="An open source platform we built to distribute the damage assessment with the help of volunteers. ALlowing a distributed workfoce to assess damage to homes rapidly."
+                    >
+                      <img
+                        src="media/portfolio/geoq.jpg?w=50&amp;h=50&amp;fit=crop"
+                        alt="Screenshots of GeoQ."
+                        class="w-full h-full object-cover"
+                      />
                     </button>
-                    <button class="work-thumbnail w-12 h-12 rounded-lg overflow-hidden border-2 border-slate-200 hover:border-blue-400 transition-colors" data-image="media/portfolio/geoq2.jpg?w=800&h=600&fit=crop" data-caption="An open source platform we built to distribute the damage assessment with the help of volunteers.">
-                      <img src="media/portfolio/geoq2.jpg?w=50&h=50&fit=crop" alt="Screenshot of GeoQ" class="w-full h-full object-cover">
+                    <button
+                      class="work-thumbnail w-12 h-12 rounded-lg overflow-hidden border-2 border-slate-200 hover:border-blue-400 transition-colors"
+                      data-image="media/portfolio/geoq2.jpg?w=800&amp;h=600&amp;fit=crop"
+                      data-caption="An open source platform we built to distribute the damage assessment with the help of volunteers."
+                    >
+                      <img
+                        src="media/portfolio/geoq2.jpg?w=50&amp;h=50&amp;fit=crop"
+                        alt="Screenshot of GeoQ"
+                        class="w-full h-full object-cover"
+                      />
                     </button>
-                    <button class="work-thumbnail w-12 h-12 rounded-lg overflow-hidden border-2 border-slate-200 hover:border-blue-400 transition-colors" data-image="media/portfolio/IMG_0321.jpg?w=800&h=600&fit=crop" data-caption="Briefing the Depty FEMA Administrator on the aerial imagery and on going damage assessment">
-                      <img src="media/portfolio/IMG_0321.jpg?w=50&h=50&fit=crop" alt="Meeting with the Deputy FEMA Administrator" class="w-full h-full object-cover">
+                    <button
+                      class="work-thumbnail w-12 h-12 rounded-lg overflow-hidden border-2 border-slate-200 hover:border-blue-400 transition-colors"
+                      data-image="media/portfolio/IMG_0321.jpg?w=800&amp;h=600&amp;fit=crop"
+                      data-caption="Briefing the Depty FEMA Administrator on the aerial imagery and on going damage assessment"
+                    >
+                      <img
+                        src="media/portfolio/IMG_0321.jpg?w=50&amp;h=50&amp;fit=crop"
+                        alt="Meeting with the Deputy FEMA Administrator"
+                        class="w-full h-full object-cover"
+                      />
                     </button>
-                    <button class="work-thumbnail w-12 h-12 rounded-lg overflow-hidden border-2 border-slate-200 hover:border-blue-400 transition-colors" data-image="media/portfolio/Mantoloking_ScreenShot_ESRI.jpg?w=800&h=600&fit=crop" data-caption="The Check Your Home app my co-worker and I built giving evacuated residence the ability to see the conditions of their homes.">
-                      <img src="media/portfolio/Mantoloking_ScreenShot_ESRI.jpg?w=50&h=50&fit=crop" alt="screenshots of the check your home website" class="w-full h-full object-cover">
+                    <button
+                      class="work-thumbnail w-12 h-12 rounded-lg overflow-hidden border-2 border-slate-200 hover:border-blue-400 transition-colors"
+                      data-image="media/portfolio/Mantoloking_ScreenShot_ESRI.jpg?w=800&amp;h=600&amp;fit=crop"
+                      data-caption="The Check Your Home app my co-worker and I built giving evacuated residence the ability to see the conditions of their homes."
+                    >
+                      <img
+                        src="media/portfolio/Mantoloking_ScreenShot_ESRI.jpg?w=50&amp;h=50&amp;fit=crop"
+                        alt="screenshots of the check your home website"
+                        class="w-full h-full object-cover"
+                      />
                     </button>
                   </div>
                 </div>
 
                 <!-- Apple -->
-                <div class="resume-event cursor-pointer p-2.5 -mx-2.5 rounded-lg transition-all hover:bg-slate-50" data-lat="34.2011" data-lng="-118.6015" data-title="Canoga Park, CA" data-hide-quote="false" data-quotes="[
-            {&quot;photo&quot;: &quot;media/rong.jpeg&quot;, &quot;name&quot;: &quot;Ron Green, Peer&quot;, &quot;quote&quot;: &quot;Cory is possibly the most intelligent, innovative, and motivated person I have ever worked with.&quot;}
-          ]">
+                <div
+                  class="resume-event cursor-pointer p-2.5 -mx-2.5 rounded-lg transition-all hover:bg-slate-50"
+                  data-lat="34.2011"
+                  data-lng="-118.6015"
+                  data-title="Canoga Park, CA"
+                  data-hide-quote="false"
+                  data-quotes='[
+            {"photo": "media/rong.jpeg", "name": "Ron Green, Peer", "quote": "Cory is possibly the most intelligent, innovative, and motivated person I have ever worked with."}
+          ]'
+                >
                   <div class="flex justify-between items-start mb-1">
                     <h3 class="text-sm font-medium text-slate-900">
                       Genius Bar Technician
@@ -1046,10 +1946,31 @@ content: `
               </li>
               <li>Resolved technical challenges under tight deadlines</li>
             </ul>-->
-                  <div class="flex items-center gap-1 mt-1.5 text-xs text-blue-600">
-                    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" width="12" height="12" viewBox="0 0 24 24" data-icon="lucide:map-pin" data-width="12" style="stroke-width: 1.5" class="iconify iconify--lucide">
-                      <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
-                        <path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"></path>
+                  <div
+                    class="flex items-center gap-1 mt-1.5 text-xs text-blue-600"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      aria-hidden="true"
+                      role="img"
+                      width="12"
+                      height="12"
+                      viewBox="0 0 24 24"
+                      data-icon="lucide:map-pin"
+                      data-width="12"
+                      style="stroke-width: 1.5"
+                      class="iconify iconify--lucide"
+                    >
+                      <g
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                      >
+                        <path
+                          d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"
+                        ></path>
                         <circle cx="12" cy="10" r="3"></circle>
                       </g>
                     </svg>
@@ -1061,67 +1982,150 @@ content: `
 
             <!-- Education Section -->
             <section class="mb-6">
-              <h2 class="text-xs font-semibold text-slate-400 uppercase tracking-wider mb-3">
+              <h2
+                class="text-xs font-semibold text-slate-400 uppercase tracking-wider mb-3"
+              >
                 Education
               </h2>
               <div class="space-y-4">
-                <div class="resume-event cursor-pointer p-2.5 -mx-2.5 rounded-lg transition-all hover:bg-slate-50" data-lat="34.0511" data-lng="-117.2633" data-title="Loma Linda, CA" data-quotes="[
-            {&quot;photo&quot;: &quot;media/donng.jpeg&quot;, &quot;name&quot;: &quot;Donn Gaede, DrPH, Professor&quot;, &quot;quote&quot;: &quot;He is bright, articulate and creative. He is also very honest and open and will give you a very honest assessment of what he is willing to take on.&quot;},
-            {&quot;photo&quot;: &quot;media/sarag.jpg&quot;, &quot;name&quot;: &quot;Dr Sara Graham, Classmate&quot;, &quot;quote&quot;: &quot;Cory is a visionary with shrewd business sense. His work is quality and his compassion for others is matched by few. Cory works well on teams and has definite leadership qualities. I look forward to working with Cory on future endeavors.&quot;}                ]">
+                <div
+                  class="resume-event cursor-pointer p-2.5 -mx-2.5 rounded-lg transition-all hover:bg-slate-50"
+                  data-lat="34.0511"
+                  data-lng="-117.2633"
+                  data-title="Loma Linda, CA"
+                  data-quotes='[
+            {"photo": "media/donng.jpeg", "name": "Donn Gaede, DrPH, Professor", "quote": "He is bright, articulate and creative. He is also very honest and open and will give you a very honest assessment of what he is willing to take on."},
+            {"photo": "media/sarag.jpg", "name": "Dr Sara Graham, Classmate", "quote": "Cory is a visionary with shrewd business sense. His work is quality and his compassion for others is matched by few. Cory works well on teams and has definite leadership qualities. I look forward to working with Cory on future endeavors."}                ]'
+                >
                   <div class="flex justify-between items-start mb-1">
                     <h3 class="text-sm font-medium text-slate-900">
-                      Global Health | MPH
+                      Masters of Global Health | MPH
                     </h3>
-                    <span class="text-xs text-slate-400 whitespace-nowrap ml-3">
-                      2006 - 2008
-                    </span>
                   </div>
                   <p class="text-sm text-slate-600">Loma Linda University</p>
-                  <div class="flex items-center gap-1 mt-1.5 text-xs text-blue-600">
-                    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" width="12" height="12" viewBox="0 0 24 24" data-icon="lucide:map-pin" data-width="12" style="stroke-width: 1.5" class="iconify iconify--lucide">
-                      <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
-                        <path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"></path>
+                  <div
+                    class="flex items-center gap-1 mt-1.5 text-xs text-blue-600"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      aria-hidden="true"
+                      role="img"
+                      width="12"
+                      height="12"
+                      viewBox="0 0 24 24"
+                      data-icon="lucide:map-pin"
+                      data-width="12"
+                      style="stroke-width: 1.5"
+                      class="iconify iconify--lucide"
+                    >
+                      <g
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                      >
+                        <path
+                          d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"
+                        ></path>
                         <circle cx="12" cy="10" r="3"></circle>
                       </g>
                     </svg>
                     Loma Linda, CA
                   </div>
                   <div class="work-thumbnails flex gap-2">
-                    <button class="work-thumbnail w-12 h-12 rounded-lg overflow-hidden border-2 border-slate-200 hover:border-blue-400 transition-colors" data-image="media/portfolio/MuhammadYunus.jpg?w=800&h=600&fit=crop" data-caption="Wrote my thesis on the Millennium Development Goals (MDGs) and effect Microcredit achieved. Received an Internship with Muhammad Yunus, 2008 Nobel Peace Prize recipient.">
-                      <img src="media/portfolio/MuhammadYunus.jpg?w=50&h=50&fit=crop" alt="Muhammad Yunus" class="w-full h-full object-cover">
+                    <button
+                      class="work-thumbnail w-12 h-12 rounded-lg overflow-hidden border-2 border-slate-200 hover:border-blue-400 transition-colors"
+                      data-image="media/portfolio/MuhammadYunus.jpg?w=800&amp;h=600&amp;fit=crop"
+                      data-caption="Wrote my thesis on the Millennium Development Goals (MDGs) and effect Microcredit achieved. Received an Internship with Muhammad Yunus, 2008 Nobel Peace Prize recipient."
+                    >
+                      <img
+                        src="media/portfolio/MuhammadYunus.jpg?w=50&amp;h=50&amp;fit=crop"
+                        alt="Muhammad Yunus"
+                        class="w-full h-full object-cover"
+                      />
                     </button>
-                    <button class="work-thumbnail w-12 h-12 rounded-lg overflow-hidden border-2 border-slate-200 hover:border-blue-400 transition-colors" data-image="media/portfolio/Philippines1.jpg?w=800&h=600&fit=crop" data-caption="Traveling to the Philippines to conduct a Anti-Smoking study.">
-                      <img src="media/portfolio/Philippines1.jpg?w=50&h=50&fit=crop" alt="Trip to Philippines" class="w-full h-full object-cover">
+                    <button
+                      class="work-thumbnail w-12 h-12 rounded-lg overflow-hidden border-2 border-slate-200 hover:border-blue-400 transition-colors"
+                      data-image="media/portfolio/Philippines1.jpg?w=800&amp;h=600&amp;fit=crop"
+                      data-caption="Traveling to the Philippines to conduct a Anti-Smoking study."
+                    >
+                      <img
+                        src="media/portfolio/Philippines1.jpg?w=50&amp;h=50&amp;fit=crop"
+                        alt="Trip to Philippines"
+                        class="w-full h-full object-cover"
+                      />
                     </button>
                   </div>
                 </div>
-                <div class="resume-event cursor-pointer p-2.5 -mx-2.5 rounded-lg transition-all hover:bg-slate-50" data-lat="33.9292" data-lng="-117.4254" data-title="Riverside, CA" data-hide-quote="true" data-quotes="[]">
+                <div
+                  class="resume-event cursor-pointer p-2.5 -mx-2.5 rounded-lg transition-all hover:bg-slate-50"
+                  data-lat="33.9292"
+                  data-lng="-117.4254"
+                  data-title="Riverside, CA"
+                  data-hide-quote="true"
+                  data-quotes="[]"
+                >
                   <div class="flex justify-between items-start mb-1">
                     <h3 class="text-sm font-medium text-slate-900">
-                      Theology | BAT
+                      Bachelor of Applied Theology | BAT
                     </h3>
-                    <span class="text-xs text-slate-400 whitespace-nowrap ml-3">
-                      2002 - 2006
-                    </span>
                   </div>
                   <p class="text-sm text-slate-600">
                     California Baptist University
                   </p>
-                  <div class="flex items-center gap-1 mt-1.5 text-xs text-blue-600">
-                    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" width="12" height="12" viewBox="0 0 24 24" data-icon="lucide:map-pin" data-width="12" style="stroke-width: 1.5" class="iconify iconify--lucide">
-                      <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
-                        <path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"></path>
+                  <div
+                    class="flex items-center gap-1 mt-1.5 text-xs text-blue-600"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      aria-hidden="true"
+                      role="img"
+                      width="12"
+                      height="12"
+                      viewBox="0 0 24 24"
+                      data-icon="lucide:map-pin"
+                      data-width="12"
+                      style="stroke-width: 1.5"
+                      class="iconify iconify--lucide"
+                    >
+                      <g
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                      >
+                        <path
+                          d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"
+                        ></path>
                         <circle cx="12" cy="10" r="3"></circle>
                       </g>
                     </svg>
                     Riverside, CA
                   </div>
                   <div class="work-thumbnails flex gap-2">
-                    <button class="work-thumbnail w-12 h-12 rounded-lg overflow-hidden border-2 border-slate-200 hover:border-blue-400 transition-colors" data-image="media/portfolio/greece.jpg?=800&h=600&fit=crop" data-caption="International Service Project to Greece">
-                      <img src="media/portfolio/greece.jpg?=50&h=50&fit=crop" alt="Photo of International Service project in Greece" class="w-full h-full object-cover">
+                    <button
+                      class="work-thumbnail w-12 h-12 rounded-lg overflow-hidden border-2 border-slate-200 hover:border-blue-400 transition-colors"
+                      data-image="media/portfolio/greece.jpg?=800&amp;h=600&amp;fit=crop"
+                      data-caption="International Service Project to Greece"
+                    >
+                      <img
+                        src="media/portfolio/greece.jpg?=50&amp;h=50&amp;fit=crop"
+                        alt="Photo of International Service project in Greece"
+                        class="w-full h-full object-cover"
+                      />
                     </button>
-                    <button class="work-thumbnail w-12 h-12 rounded-lg overflow-hidden border-2 border-slate-200 hover:border-blue-400 transition-colors" data-image="media/portfolio/neworleans1.jpg?w=800&h=600&fit=crop" data-caption="One of several teams I organized to New Orleans during Hurrican Katrina. These volunteer trips took place during spring breaks, and eventually the university named them Domestic Service Projects.">
-                      <img src="media/portfolio/neworleans1.jpg?w=50&h=50&fit=crop" alt="Domestic Service Project" class="w-full h-full object-cover">
+                    <button
+                      class="work-thumbnail w-12 h-12 rounded-lg overflow-hidden border-2 border-slate-200 hover:border-blue-400 transition-colors"
+                      data-image="media/portfolio/neworleans1.jpg?w=800&amp;h=600&amp;fit=crop"
+                      data-caption="One of several teams I organized to New Orleans during Hurrican Katrina. These volunteer trips took place during spring breaks, and eventually the university named them Domestic Service Projects."
+                    >
+                      <img
+                        src="media/portfolio/neworleans1.jpg?w=50&amp;h=50&amp;fit=crop"
+                        alt="Domestic Service Project"
+                        class="w-full h-full object-cover"
+                      />
                     </button>
                   </div>
                 </div>
@@ -1130,32 +2134,50 @@ content: `
 
             <!-- Strengths Section -->
             <section class="mb-6">
-              <h2 class="text-xs font-semibold text-slate-400 uppercase tracking-wider mb-3">
+              <h2
+                class="text-xs font-semibold text-slate-400 uppercase tracking-wider mb-3"
+              >
                 Strengths
               </h2>
               <div class="flex flex-wrap gap-1.5">
-                <span class="px-2 py-1 bg-slate-100 text-slate-600 text-xs rounded">
+                <span
+                  class="px-2 py-1 bg-slate-100 text-slate-600 text-xs rounded"
+                >
                   Owner Attitude
                 </span>
-                <span class="px-2 py-1 bg-slate-100 text-slate-600 text-xs rounded">
+                <span
+                  class="px-2 py-1 bg-slate-100 text-slate-600 text-xs rounded"
+                >
                   Business Development
                 </span>
-                <span class="px-2 py-1 bg-slate-100 text-slate-600 text-xs rounded">
+                <span
+                  class="px-2 py-1 bg-slate-100 text-slate-600 text-xs rounded"
+                >
                   Strategic Thinker
                 </span>
-                <span class="px-2 py-1 bg-slate-100 text-slate-600 text-xs rounded">
+                <span
+                  class="px-2 py-1 bg-slate-100 text-slate-600 text-xs rounded"
+                >
                   Strong Communicator
                 </span>
-                <span class="px-2 py-1 bg-slate-100 text-slate-600 text-xs rounded">
+                <span
+                  class="px-2 py-1 bg-slate-100 text-slate-600 text-xs rounded"
+                >
                   Detail-oriented
                 </span>
-                <span class="px-2 py-1 bg-slate-100 text-slate-600 text-xs rounded">
+                <span
+                  class="px-2 py-1 bg-slate-100 text-slate-600 text-xs rounded"
+                >
                   Creative Problem Solver
                 </span>
-                <span class="px-2 py-1 bg-slate-100 text-slate-600 text-xs rounded">
+                <span
+                  class="px-2 py-1 bg-slate-100 text-slate-600 text-xs rounded"
+                >
                   Data-driven
                 </span>
-                <span class="px-2 py-1 bg-slate-100 text-slate-600 text-xs rounded">
+                <span
+                  class="px-2 py-1 bg-slate-100 text-slate-600 text-xs rounded"
+                >
                   Team Player
                 </span>
               </div>
@@ -1163,7 +2185,9 @@ content: `
 
             <!-- Tools Section -->
             <section class="pb-6">
-              <h2 class="text-xs font-semibold text-slate-400 uppercase tracking-wider mb-3">
+              <h2
+                class="text-xs font-semibold text-slate-400 uppercase tracking-wider mb-3"
+              >
                 Tools
               </h2>
               <div class="space-y-2 text-xs text-slate-600">
@@ -1198,7 +2222,11 @@ content: `
     </div>
 
     <!-- Quote Box - Bottom Right (iMessage Style with Multiple Quotes) -->
-    <div id="info-card" class="fixed z-30 opacity-0 transition-all duration-700 transform translate-y-4 quotes-container left-2 right-2 bottom-2 md:left-[44rem] md:right-4 md:bottom-3 md:max-w-[400px]" style="opacity: 0; transform: translateY(16px);">
+    <div
+      id="info-card"
+      class="fixed z-30 opacity-0 transition-all duration-700 transform translate-y-4 quotes-container left-2 right-2 bottom-2 md:left-[44rem] md:right-4 md:bottom-3 md:max-w-[400px]"
+      style="opacity: 0; transform: translateY(16px);"
+    >
       <div class="bg-white rounded-xl shadow-2xl overflow-hidden">
         <div class="quotes-scroll-container p-4">
           <div id="quotes-wrapper" class="space-y-4">
@@ -1239,7 +2267,7 @@ content: `
                 </div>
                 <div>
                   <h3 class="text-lg font-semibold text-slate-900 tracking-tight">Cory MacVie</h3>
-                  <p class="text-sm text-slate-500">Agentic Engineer & Product Leader</p>
+                  <p class="text-sm text-slate-500">Digital Product Management Leader</p>
                 </div> -->
                 <div class="prose prose-sm text-slate-600">
                   <p class="text-sm leading-relaxed">I'm a product leader with 15+ years of experience delivering software across healthcare compliance, legal tech, publishing platforms, geospatial applications, and field data collection. I focus on building products that solve real problems by deeply understanding customer needs and translating friction into scalable, well-designed solutions.</p>
@@ -1930,7 +2958,7 @@ content: `
                   </div>
                   <div>
                    <!-- <h3 class="text-lg font-semibold text-slate-900 tracking-tight">Cory MacVie</h3>
-                    <p class="text-sm text-slate-500">Agentic Engineer & Product Leader</p> -->
+                    <p class="text-sm text-slate-500">ADigital Product Management Leader</p> -->
                   </div>
                   <div class="prose prose-sm text-slate-600">
                     <p class="text-sm leading-relaxed">I'm a product leader with 15+ years of experience delivering software across healthcare compliance, legal tech, publishing platforms, geospatial applications, and field data collection. I focus on building products that solve real problems by deeply understanding customer needs and translating friction into scalable, well-designed solutions.</p>
@@ -1974,18 +3002,42 @@ content: `
       }
     </script>
 
-    <div id="thumbnail-preview" class="fixed z-[70] opacity-0 pointer-events-none transition-all duration-200 ease-out hidden md:block w-fit" style="left: 0; top: 0;">
-      <div class="inline-block bg-white p-2 rounded-xl shadow-2xl border border-slate-200">
-        <img id="thumbnail-preview-img" src="" alt="Preview" class="h-[450px] w-auto object-contain rounded-lg bg-slate-50" style="min-width: 250px; max-width: 800px;">
+    <div
+      id="thumbnail-preview"
+      class="fixed z-[70] opacity-0 pointer-events-none transition-all duration-200 ease-out hidden md:block w-fit"
+      style="left: 0; top: 0;"
+    >
+      <div
+        class="inline-block bg-white p-2 rounded-xl shadow-2xl border border-slate-200"
+      >
+        <img
+          id="thumbnail-preview-img"
+          src=""
+          alt="Preview"
+          class="h-[450px] w-auto object-contain rounded-lg bg-slate-50"
+          style="min-width: 250px; max-width: 800px;"
+        />
       </div>
     </div>
     <script>
       (function(){const p=document.getElementById("thumbnail-preview");const i=document.getElementById("thumbnail-preview-img");const gap=20;document.querySelectorAll(".work-thumbnail").forEach(t=>{t.addEventListener("mouseenter",()=>{const src=t.dataset.image;if(!src)return;i.src=src;const r=t.getBoundingClientRect();const pR=p.getBoundingClientRect();const w=window.innerWidth;const h=window.innerHeight;let left=r.right+gap;let top=r.top+(r.height/2)-(pR.height/2);if(left+pR.width>w-gap){left=r.left-gap-pR.width;}if(top<gap)top=gap;if(top+pR.height>h-gap)top=h-gap-pR.height;p.style.left=left+"px";p.style.top=top+"px";p.classList.remove("opacity-0","pointer-events-none");p.classList.add("opacity-100");});t.addEventListener("mouseleave",()=>{p.classList.add("opacity-0","pointer-events-none");p.classList.remove("opacity-100");});});})();
     </script>
 
-    <button id="theme-toggle" onclick="toggleTheme()" class="fixed z-40 p-3 rounded-xl bg-white dark:bg-slate-800 shadow-2xl border border-slate-200 dark:border-slate-700 text-slate-600 dark:text-slate-300 hover:scale-105 transition-all duration-300 hidden md:flex items-center justify-center cursor-pointer group bottom-4 right-4">
-      <span class="iconify group-hover:rotate-12 transition-transform duration-300 dark:hidden" data-icon="lucide:moon" data-width="20"></span>
-      <span class="iconify group-hover:rotate-12 transition-transform duration-300 hidden dark:block" data-icon="lucide:sun" data-width="20"></span>
+    <button
+      id="theme-toggle"
+      onclick="toggleTheme()"
+      class="fixed z-40 p-3 rounded-xl bg-white dark:bg-slate-800 shadow-2xl border border-slate-200 dark:border-slate-700 text-slate-600 dark:text-slate-300 hover:scale-105 transition-all duration-300 hidden md:flex items-center justify-center cursor-pointer group bottom-4 right-4"
+    >
+      <span
+        class="iconify group-hover:rotate-12 transition-transform duration-300 dark:hidden"
+        data-icon="lucide:moon"
+        data-width="20"
+      ></span>
+      <span
+        class="iconify group-hover:rotate-12 transition-transform duration-300 hidden dark:block"
+        data-icon="lucide:sun"
+        data-width="20"
+      ></span>
     </button>
     <script>
       function toggleTheme() {
@@ -2162,31 +3214,29 @@ content: `
         const postsContainer = document.getElementById('posts-container');
         try {
           const rssUrl = 'https://medium.com/feed/@corymacvie';
-          const proxyUrl = 'https://api.allorigins.win/get?url=' + encodeURIComponent(rssUrl);
+          const proxyUrl = 'https://api.rss2json.com/v1/api.json?rss_url=' + encodeURIComponent(rssUrl);
           const response = await fetch(proxyUrl);
           const data = await response.json();
-          const parser = new DOMParser();
-          const xml = parser.parseFromString(data.contents, "text/xml");
-          const items = Array.from(xml.querySelectorAll("item"));
-          if (items.length > 0) {
-            const postsHtml = items.slice(0, 6).map(item => {
-              const title = item.querySelector("title")?.textContent || '';
-              const link = item.querySelector("link")?.textContent || '';
-              const pubDate = new Date(item.querySelector("pubDate")?.textContent || '');
+
+          if (data.status === 'ok' && data.items && data.items.length > 0) {
+            const postsHtml = data.items.slice(0, 6).map(item => {
+              const pubDate = new Date(item.pubDate);
               const formattedDate = pubDate.toLocaleDateString('en-US', {
                 month: 'short', day: 'numeric', year: 'numeric'
               });
-              const encodedNode = item.getElementsByTagName("content:encoded")[0] || item.getElementsByTagNameNS("*", "encoded")[0] || item.querySelector("description");
-              const encodedContent = encodedNode ? encodedNode.textContent : '';
-              const textContent = encodedContent.replace(/<[^>]+>/g, '');
+
+              const content = item.content || item.description || '';
+              const textContent = content.replace(/<[^>]+>/g, '').trim();
               const wordCount = textContent.split(/\s+/).length;
               const readTime = Math.max(1, Math.ceil(wordCount / 200));
-              const imgMatch = encodedContent.match(/<img[^>]+src="([^"]+)"/);
-              const thumbnail = imgMatch ? imgMatch[1] : 'https://images.unsplash.com/photo-1499750310107-5fef28a66643?w=400&h=300&fit=crop';
+
+              const imgMatch = content.match(/<img[^>]+src="([^"]+)"/);
+              const thumbnail = item.thumbnail || (imgMatch ? imgMatch[1] : 'https://images.unsplash.com/photo-1499750310107-5fef28a66643?w=400&h=300&fit=crop');
+
               return `
-                <a href="${link}" target="_blank" rel="noopener noreferrer" class="block overflow-hidden rounded-xl border border-slate-200 hover:border-slate-300 hover:shadow-md transition-all cursor-pointer bg-white dark:bg-slate-800 dark:border-slate-700 dark:hover:border-slate-600">
+                <a href="${item.link}" target="_blank" rel="noopener noreferrer" class="block overflow-hidden rounded-xl border border-slate-200 hover:border-slate-300 hover:shadow-md transition-all cursor-pointer bg-white dark:bg-slate-800 dark:border-slate-700 dark:hover:border-slate-600">
                   <div class="aspect-video w-full overflow-hidden bg-slate-100 dark:bg-slate-900">
-                    <img src="${thumbnail}" alt="${title.replace(/"/g, '&quot;')}" class="w-full h-full object-cover" onerror="this.src='https://images.unsplash.com/photo-1499750310107-5fef28a66643?w=400&h=300&fit=crop'">
+                    <img src="${thumbnail}" alt="${item.title.replace(/"/g, '&quot;')}" class="w-full h-full object-cover" onerror="this.src='https://images.unsplash.com/photo-1499750310107-5fef28a66643?w=400&h=300&fit=crop'">
                   </div>
                   <div class="p-4">
                     <div class="flex items-center gap-2 text-xs text-slate-400 dark:text-slate-500 mb-2">
@@ -2194,7 +3244,7 @@ content: `
                       <span>•</span>
                       <span>${readTime} min read</span>
                     </div>
-                    <h3 class="text-sm font-medium text-slate-900 dark:text-slate-100 mb-1 line-clamp-2">${title}</h3>
+                    <h3 class="text-sm font-medium text-slate-900 dark:text-slate-100 mb-1 line-clamp-2">${item.title}</h3>
                     <p class="text-xs text-slate-500 dark:text-slate-400 leading-relaxed line-clamp-2">${textContent.substring(0, 100)}...</p>
                   </div>
                 </a>
@@ -2205,8 +3255,8 @@ content: `
             throw new Error('No posts found');
           }
         } catch (error) {
-          console.error(error);
-          if(postsContainer) {
+          console.error('Medium fetch error:', error);
+          if (postsContainer) {
             postsContainer.innerHTML = `
               <div class="text-center py-6">
                 <span class="iconify text-slate-300 dark:text-slate-600 mb-3" data-icon="lucide:file-x" data-width="32" style="stroke-width: 1.5"></span>
@@ -2222,28 +3272,27 @@ content: `
         const booksContainer = document.getElementById('books-container');
         try {
           const rssUrl = 'https://www.goodreads.com/review/list_rss/6857196?key=X1zehKAV7nSuPJ2I8zn7_v2Ydgut0KVxaLxgZr3MVOpQXwxH&shelf=%23ALL%23';
-          const proxyUrl = 'https://api.allorigins.win/get?url=' + encodeURIComponent(rssUrl);
+          const proxyUrl = 'https://api.rss2json.com/v1/api.json?rss_url=' + encodeURIComponent(rssUrl);
           const response = await fetch(proxyUrl);
           const data = await response.json();
-          const parser = new DOMParser();
-          const xml = parser.parseFromString(data.contents, "text/xml");
-          const items = Array.from(xml.querySelectorAll("item"));
-          if (items.length > 0) {
-            const booksHtml = items.slice(0, 8).map(item => {
-              const title = item.querySelector("title")?.textContent || '';
-              const link = item.querySelector("link")?.textContent || '';
-              const description = item.querySelector("description")?.textContent || '';
+
+          if (data.status === 'ok' && data.items && data.items.length > 0) {
+            const booksHtml = data.items.slice(0, 8).map(item => {
+              const description = item.description || item.content || '';
               const imgMatch = description.match(/<img[^>]+src="([^"]+)"/);
-              const coverUrl = imgMatch ? imgMatch[1].replace(/\._\w+_\./, '._SX200_.') : 'https://via.placeholder.com/200x300?text=No+Cover';
-              const authorMatch = description.match(/author:\s*(?:<[^>]+>)?([^<]+)/i);
-              let author = authorMatch ? authorMatch[1].trim() : 'Unknown Author';
+              let coverUrl = imgMatch ? imgMatch[1] : 'https://images.unsplash.com/photo-1544947950-fa07a98d237f?w=200&h=300&fit=crop';
+              coverUrl = coverUrl.replace(/\._\w+_\./, '._SX200_.');
+
+              const authorMatch = description.match(/author:\s*(?:<[^>]+>)?([^<]+)/i) || description.match(/author:\s*([^<]+)/i);
+              let author = authorMatch ? authorMatch[1].replace(/<[^>]+>/g, '').trim() : 'Unknown Author';
+
               return `
-                <a href="${link}" target="_blank" class="block overflow-hidden rounded-xl border border-slate-200 hover:border-slate-300 hover:shadow-md transition-all bg-white dark:bg-slate-800 dark:border-slate-700 dark:hover:border-slate-600">
+                <a href="${item.link}" target="_blank" class="block overflow-hidden rounded-xl border border-slate-200 hover:border-slate-300 hover:shadow-md transition-all bg-white dark:bg-slate-800 dark:border-slate-700 dark:hover:border-slate-600">
                   <div class="aspect-[2/3] w-full overflow-hidden bg-slate-100 dark:bg-slate-900">
-                    <img src="${coverUrl}" alt="${title.replace(/"/g, '&quot;')}" class="w-full h-full object-cover" onerror="this.src='https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/4734259a-bad7-422f-981e-ce01e79184f2_1600w.jpg'">
+                    <img src="${coverUrl}" alt="${item.title.replace(/"/g, '&quot;')}" class="w-full h-full object-cover" onerror="this.src='https://images.unsplash.com/photo-1544947950-fa07a98d237f?w=200&h=300&fit=crop'">
                   </div>
                   <div class="p-3">
-                    <h4 class="text-xs font-medium text-slate-900 dark:text-slate-100 line-clamp-2 mb-1">${title}</h4>
+                    <h4 class="text-xs font-medium text-slate-900 dark:text-slate-100 line-clamp-2 mb-1">${item.title}</h4>
                     <p class="text-xs text-slate-500 dark:text-slate-400 line-clamp-1">${author}</p>
                   </div>
                 </a>
@@ -2254,8 +3303,8 @@ content: `
             throw new Error('No books found');
           }
         } catch (error) {
-          console.error(error);
-          if(booksContainer) {
+          console.error('Goodreads fetch error:', error);
+          if (booksContainer) {
             booksContainer.innerHTML = `
               <div class="col-span-2 text-center py-6">
                 <span class="iconify text-slate-300 dark:text-slate-600 mb-3" data-icon="lucide:book-x" data-width="32" style="stroke-width: 1.5"></span>
@@ -2276,20 +3325,20 @@ content: `
           content: `
             <div class="space-y-6">
               <!-- Card 1 -->
-               <div class="bg-slate-50 border border-slate-200 rounded-xl overflow-hidden shadow-sm">
-                <div class="p-4 border-b border-slate-200">
+               <div class="bg-white border border-slate-200 rounded-xl overflow-hidden shadow-sm flex flex-col sm:flex-row">
+                <div class="p-4 bg-slate-50 border-b sm:border-b-0 sm:border-r border-slate-200 sm:w-1/2">
                   <h3 class="text-xs font-semibold text-slate-400 uppercase tracking-wider mb-2">Problem</h3>
                   <p class="text-sm text-slate-600 leading-relaxed">Keeping track of daily tasks and recording productivity within physical, printed Day One journals creates friction and disjointed workflows.</p>
                 </div>
-                <div class="p-4 bg-white">
+                <div class="p-4 sm:w-1/2">
                   <h3 class="text-xs font-semibold text-slate-400 uppercase tracking-wider mb-2">Solution</h3>
-                  <a href="https://daytasks.io" target="_blank" class="block group">
-                    <div class="w-full aspect-video bg-slate-100 rounded-lg overflow-hidden mb-3 border border-slate-200 relative">
-                      <img src="media/portfolio/daytasks.jpg" alt="DayTasks screenshot" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" onerror="this.src='media/daytasks.io_sm.jpg'">
+                  <a href="https://daytasks.io" target="_blank" class="block group/link mb-3">
+                    <div class="w-full aspect-video bg-slate-100 rounded-lg overflow-hidden mb-2 border border-slate-200 relative">
+                      <img src="media/portfolio/daytasks.jpg" alt="DayTasks screenshot" class="w-full h-full object-cover group-hover/link:scale-105 transition-transform duration-300" onerror="this.src='media/daytasks.io_sm.jpg'">
                     </div>
-                    <div class="flex items-center gap-2 mb-1">
-                      <span class="text-sm font-semibold text-slate-900 group-hover:text-blue-600 transition-colors">DayTasks.io</span>
-                      <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-slate-400 group-hover:text-blue-600"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg>
+                    <div class="flex items-center gap-2">
+                      <span class="text-sm font-semibold text-slate-900 group-hover/link:text-blue-600 transition-colors">DayTasks.io</span>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-slate-400 group-hover/link:text-blue-600"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg>
                     </div>
                   </a>
                   <p class="text-sm text-slate-600 leading-relaxed">A minimalist daily to-do list app designed for frictionless use on both desktop and mobile. It seamlessly syncs and sends your completed lists directly to Day One, maintaining a perfect digital-to-physical journal record.</p>
@@ -2297,23 +3346,44 @@ content: `
               </div>
 
               <!-- Card 2 -->
-             <div class="bg-slate-50 border border-slate-200 rounded-xl overflow-hidden shadow-sm">
-                <div class="p-4 border-b border-slate-200">
+             <div class="bg-white border border-slate-200 rounded-xl overflow-hidden shadow-sm flex flex-col sm:flex-row">
+                <div class="p-4 bg-slate-50 border-b sm:border-b-0 sm:border-r border-slate-200 sm:w-1/2">
                   <h3 class="text-xs font-semibold text-slate-400 uppercase tracking-wider mb-2">Problem</h3>
                   <p class="text-sm text-slate-600 leading-relaxed">People are spending too much time on endless social feeds, causing us to lose valuable opportunities for meaningful, deep conversations with one another.</p>
                 </div>
-                <div class="p-4 bg-white">
+                <div class="p-4 sm:w-1/2">
                   <h3 class="text-xs font-semibold text-slate-400 uppercase tracking-wider mb-2">Solution</h3>
-                  <a href="https://www.pockit.cards" target="_blank" class="block group">
-                    <div class="w-full aspect-video bg-slate-100 rounded-lg overflow-hidden mb-3 border border-slate-200 relative">
-                      <img src="media/portfolio/pockit-cards.jpg" alt="Pockit Cards screenshot" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" onerror="this.src='media/pockit.cards_sm.jpg'">
+                  <a href="https://www.pockittalk.com" target="_blank" class="block group/link mb-3">
+                    <div class="w-full aspect-video bg-slate-100 rounded-lg overflow-hidden mb-2 border border-slate-200 relative">
+                      <img src="media/portfolio/pockittalk_sm.jpg" alt="Pockit Cards screenshot" class="w-full h-full object-cover group-hover/link:scale-105 transition-transform duration-300" onerror="this.src='media/pockittalk_sm.jpg'">
                     </div>
-                    <div class="flex items-center gap-2 mb-1">
-                      <span class="text-sm font-semibold text-slate-900 group-hover:text-blue-600 transition-colors">www.pockit.cards</span>
-                      <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-slate-400 group-hover:text-blue-600"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg>
+                    <div class="flex items-center gap-2">
+                      <span class="text-sm font-semibold text-slate-900 group-hover/link:text-blue-600 transition-colors">PockitTalk.com</span>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-slate-400 group-hover/link:text-blue-600"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg>
                     </div>
                   </a>
                   <p class="text-sm text-slate-600 leading-relaxed">A beautifully designed conversation game that people of all ages can carry with them at all times. It sparks connection and depth for any occasion, bridging the gap between digital distraction and human interaction.</p>
+                </div>
+              </div>
+
+              <!-- Card 3 -->
+              <div class="bg-white border border-slate-200 rounded-xl overflow-hidden shadow-sm flex flex-col sm:flex-row">
+                <div class="p-4 bg-slate-50 border-b sm:border-b-0 sm:border-r border-slate-200 sm:w-1/2">
+                  <h3 class="text-xs font-semibold text-slate-400 uppercase tracking-wider mb-2">Problem</h3>
+                  <p class="text-sm text-slate-600 leading-relaxed">Friends and internet inquiries frequently expressed a desire to host their own interactive geospatial resumes to better showcase their experiences.</p>
+                </div>
+                <div class="p-4 sm:w-1/2">
+                  <h3 class="text-xs font-semibold text-slate-400 uppercase tracking-wider mb-2">Solution</h3>
+                  <a href="https://georesume.io" target="_blank" class="block group/link mb-3">
+                    <div class="w-full aspect-video bg-slate-100 rounded-lg overflow-hidden mb-2 border border-slate-200 relative">
+                      <img src="media/portfolio/goeresume_sm.jpg" alt="GeoResume screenshot" class="w-full h-full object-cover group-hover/link:scale-105 transition-transform duration-300" onerror="this.src='media/goeresume_sm.jpg'">
+                    </div>
+                    <div class="flex items-center gap-2">
+                      <span class="text-sm font-semibold text-slate-900 group-hover/link:text-blue-600 transition-colors">GeoResume.io</span>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-slate-400 group-hover/link:text-blue-600"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg>
+                    </div>
+                  </a>
+                  <p class="text-sm text-slate-600 leading-relaxed">A platform for individuals to easily create, host, and share their own interactive geospatial resumes, transforming traditional work history into an engaging map-based experience.</p>
                 </div>
               </div>
             </div>
@@ -2321,5 +3391,5 @@ content: `
         };
       }
     </script>
-  
-</body></html>
+  </body>
+</html>
